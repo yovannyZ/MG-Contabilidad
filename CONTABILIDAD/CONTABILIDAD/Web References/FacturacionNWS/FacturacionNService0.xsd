@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:85/FacturacionNService.svc?xsd=xsd1" namespace="http://service.connector.alfa1lab.efact/" />
+  <xs:element name="EnviarGuia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="archivo" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarGuiaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnviarGuiaResult" type="tns:ArrayOfTransactionResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfTransactionResponse">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://service.connector.alfa1lab.efact/" minOccurs="0" maxOccurs="unbounded" name="transactionResponse" nillable="true" type="q1:transactionResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnviarRetencion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="archivo" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarRetencionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnviarRetencionResult" type="tns:ArrayOfTransactionResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

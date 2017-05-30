@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.connector.alfa1lab.efact/" elementFormDefault="qualified" targetNamespace="http://service.connector.alfa1lab.efact/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="transactionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="cdrFile" type="xs:base64Binary" />
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="digestValue" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="identifier" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="outString" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="pdfFile" type="xs:base64Binary" />
+      <xs:element minOccurs="1" maxOccurs="1" form="unqualified" name="responseCode" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="sunatError" type="tns:sunatError" />
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="uuid" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="xmlSigned" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sunatError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" form="unqualified" name="message" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" form="unqualified" name="sunatErrorCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DT_COMP_IMP" targetNamespace="http://tempuri.org/DT_COMP_IMP.xsd" xmlns:mstns="http://tempuri.org/DT_COMP_IMP.xsd" xmlns="http://tempuri.org/DT_COMP_IMP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DT_COMP_IMP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DT_COMP_IMP" msprop:Generator_DataSetName="DT_COMP_IMP">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FECHA_DOC" msprop:Generator_UserColumnName="FECHA_DOC" msprop:Generator_ColumnPropNameInRow="FECHA_DOC" msprop:Generator_ColumnVarNameInTable="columnFECHA_DOC" msprop:Generator_ColumnPropNameInTable="FECHA_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_DOC" msprop:Generator_UserColumnName="NRO_DOC" msprop:Generator_ColumnPropNameInRow="NRO_DOC" msprop:Generator_ColumnVarNameInTable="columnNRO_DOC" msprop:Generator_ColumnPropNameInTable="NRO_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_DOC" msprop:Generator_UserColumnName="COD_DOC" msprop:Generator_ColumnPropNameInRow="COD_DOC" msprop:Generator_ColumnVarNameInTable="columnCOD_DOC" msprop:Generator_ColumnPropNameInTable="COD_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_PER" msprop:Generator_UserColumnName="COD_PER" msprop:Generator_ColumnPropNameInRow="COD_PER" msprop:Generator_ColumnVarNameInTable="columnCOD_PER" msprop:Generator_ColumnPropNameInTable="COD_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_CC" msprop:Generator_UserColumnName="COD_CC" msprop:Generator_ColumnPropNameInRow="COD_CC" msprop:Generator_ColumnVarNameInTable="columnCOD_CC" msprop:Generator_ColumnPropNameInTable="COD_CCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_CUENTA" msprop:Generator_UserColumnName="COD_CUENTA" msprop:Generator_ColumnPropNameInRow="COD_CUENTA" msprop:Generator_ColumnVarNameInTable="columnCOD_CUENTA" msprop:Generator_ColumnPropNameInTable="COD_CUENTAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DES_PER" msprop:Generator_UserColumnName="DES_PER" msprop:Generator_ColumnPropNameInRow="DES_PER" msprop:Generator_ColumnVarNameInTable="columnDES_PER" msprop:Generator_ColumnPropNameInTable="DES_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_MONEDA" msprop:Generator_UserColumnName="COD_MONEDA" msprop:Generator_ColumnPropNameInRow="COD_MONEDA" msprop:Generator_ColumnVarNameInTable="columnCOD_MONEDA" msprop:Generator_ColumnPropNameInTable="COD_MONEDAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO_CAMBIO" msprop:Generator_UserColumnName="TIPO_CAMBIO" msprop:Generator_ColumnPropNameInRow="TIPO_CAMBIO" msprop:Generator_ColumnVarNameInTable="columnTIPO_CAMBIO" msprop:Generator_ColumnPropNameInTable="TIPO_CAMBIOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IMPORTE" msprop:Generator_UserColumnName="IMPORTE" msprop:Generator_ColumnPropNameInRow="IMPORTE" msprop:Generator_ColumnVarNameInTable="columnIMPORTE" msprop:Generator_ColumnPropNameInTable="IMPORTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IMPORTE_S_DEBE" msprop:Generator_UserColumnName="IMPORTE_S_DEBE" msprop:Generator_ColumnPropNameInRow="IMPORTE_S_DEBE" msprop:Generator_ColumnVarNameInTable="columnIMPORTE_S_DEBE" msprop:Generator_ColumnPropNameInTable="IMPORTE_S_DEBEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IMPORTE_S_HABER" msprop:Generator_UserColumnName="IMPORTE_S_HABER" msprop:Generator_ColumnPropNameInRow="IMPORTE_S_HABER" msprop:Generator_ColumnVarNameInTable="columnIMPORTE_S_HABER" msprop:Generator_ColumnPropNameInTable="IMPORTE_S_HABERColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COD_D_H" msprop:Generator_UserColumnName="COD_D_H" msprop:Generator_ColumnPropNameInRow="COD_D_H" msprop:Generator_ColumnVarNameInTable="columnCOD_D_H" msprop:Generator_ColumnPropNameInTable="COD_D_HColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_REF" msprop:Generator_UserColumnName="NRO_REF" msprop:Generator_ColumnPropNameInRow="NRO_REF" msprop:Generator_ColumnVarNameInTable="columnNRO_REF" msprop:Generator_ColumnPropNameInTable="NRO_REFColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_COMPROBANTE" msprop:Generator_UserColumnName="NRO_COMPROBANTE" msprop:Generator_ColumnPropNameInRow="NRO_COMPROBANTE" msprop:Generator_ColumnVarNameInTable="columnNRO_COMPROBANTE" msprop:Generator_ColumnPropNameInTable="NRO_COMPROBANTEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GLOSA" msprop:Generator_UserColumnName="GLOSA" msprop:Generator_ColumnPropNameInRow="GLOSA" msprop:Generator_ColumnVarNameInTable="columnGLOSA" msprop:Generator_ColumnPropNameInTable="GLOSAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DES_COM" msprop:Generator_UserColumnName="DES_COM" msprop:Generator_ColumnPropNameInRow="DES_COM" msprop:Generator_ColumnVarNameInTable="columnDES_COM" msprop:Generator_ColumnPropNameInTable="DES_COMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_PY" msprop:Generator_UserColumnName="COD_PY" msprop:Generator_ColumnVarNameInTable="columnCOD_PY" msprop:Generator_ColumnPropNameInRow="COD_PY" msprop:Generator_ColumnPropNameInTable="COD_PYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDEN" msprop:Generator_UserColumnName="ORDEN" msprop:Generator_ColumnPropNameInRow="ORDEN" msprop:Generator_ColumnVarNameInTable="columnORDEN" msprop:Generator_ColumnPropNameInTable="ORDENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_USU" msprop:Generator_UserColumnName="COD_USU" msprop:Generator_ColumnVarNameInTable="columnCOD_USU" msprop:Generator_ColumnPropNameInRow="COD_USU" msprop:Generator_ColumnPropNameInTable="COD_USUColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

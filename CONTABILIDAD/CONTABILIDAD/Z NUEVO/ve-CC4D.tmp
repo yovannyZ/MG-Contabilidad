@@ -1,0 +1,9 @@
+Public Class REP_REGIMEN_RET
+
+    Private Sub REP_REGIMEN_RET_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'DT_RETENCION.REPORTE_REGIMEN_RETENCION' Puede moverla o quitarla según sea necesario.
+        'Me.REPORTE_REGIMEN_RETENCIONTableAdapter.Fill(Me.DT_RETENCION.REPORTE_REGIMEN_RETENCION)
+
+        'Me.ReportViewer1.RefreshReport()
+    End Sub
+End Class

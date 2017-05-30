@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DtConceptoUnidadNegocio" targetNamespace="http://tempuri.org/DtConceptoUnidadNegocio.xsd" xmlns:mstns="http://tempuri.org/DtConceptoUnidadNegocio.xsd" xmlns="http://tempuri.org/DtConceptoUnidadNegocio.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DtConceptoUnidadNegocio" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DtConceptoUnidadNegocio" msprop:Generator_DataSetName="DtConceptoUnidadNegocio">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt" msprop:Generator_UserTableName="dt" msprop:Generator_RowDeletedName="dtRowDeleted" msprop:Generator_TableClassName="dtDataTable" msprop:Generator_RowChangedName="dtRowChanged" msprop:Generator_RowClassName="dtRow" msprop:Generator_RowChangingName="dtRowChanging" msprop:Generator_RowEvArgName="dtRowChangeEvent" msprop:Generator_RowEvHandlerName="dtRowChangeEventHandler" msprop:Generator_TablePropName="dt" msprop:Generator_TableVarName="tabledt" msprop:Generator_RowDeletingName="dtRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodConcepto" msprop:Generator_UserColumnName="CodConcepto" msprop:Generator_ColumnPropNameInRow="CodConcepto" msprop:Generator_ColumnVarNameInTable="columnCodConcepto" msprop:Generator_ColumnPropNameInTable="CodConceptoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescConcepto" msprop:Generator_UserColumnName="DescConcepto" msprop:Generator_ColumnPropNameInRow="DescConcepto" msprop:Generator_ColumnVarNameInTable="columnDescConcepto" msprop:Generator_ColumnPropNameInTable="DescConceptoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo" msprop:Generator_UserColumnName="Tipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UN1" msprop:Generator_UserColumnName="UN1" msprop:Generator_ColumnPropNameInRow="UN1" msprop:Generator_ColumnVarNameInTable="columnUN1" msprop:Generator_ColumnPropNameInTable="UN1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="UN2" msprop:Generator_UserColumnName="UN2" msprop:Generator_ColumnPropNameInRow="UN2" msprop:Generator_ColumnVarNameInTable="columnUN2" msprop:Generator_ColumnPropNameInTable="UN2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="UN3" msprop:Generator_UserColumnName="UN3" msprop:Generator_ColumnPropNameInRow="UN3" msprop:Generator_ColumnVarNameInTable="columnUN3" msprop:Generator_ColumnPropNameInTable="UN3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="UN4" msprop:Generator_UserColumnName="UN4" msprop:Generator_ColumnPropNameInRow="UN4" msprop:Generator_ColumnVarNameInTable="columnUN4" msprop:Generator_ColumnPropNameInTable="UN4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="UN5" msprop:Generator_UserColumnName="UN5" msprop:Generator_ColumnPropNameInRow="UN5" msprop:Generator_ColumnVarNameInTable="columnUN5" msprop:Generator_ColumnPropNameInTable="UN5Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

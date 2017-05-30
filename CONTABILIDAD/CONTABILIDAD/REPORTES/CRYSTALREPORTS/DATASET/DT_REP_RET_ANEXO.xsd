@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DT_REP_RET_ANEXO" targetNamespace="http://tempuri.org/DT_REP_RET_ANEXO.xsd" xmlns:mstns="http://tempuri.org/DT_REP_RET_ANEXO.xsd" xmlns="http://tempuri.org/DT_REP_RET_ANEXO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DT_REP_RET_ANEXO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DT_REP_RET_ANEXO" msprop:Generator_DataSetName="DT_REP_RET_ANEXO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_DOC" msprop:Generator_UserColumnName="COD_DOC" msprop:Generator_ColumnVarNameInTable="columnCOD_DOC" msprop:Generator_ColumnPropNameInRow="COD_DOC" msprop:Generator_ColumnPropNameInTable="COD_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SERIE_DOC" msprop:Generator_UserColumnName="SERIE_DOC" msprop:Generator_ColumnVarNameInTable="columnSERIE_DOC" msprop:Generator_ColumnPropNameInRow="SERIE_DOC" msprop:Generator_ColumnPropNameInTable="SERIE_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_DOC" msprop:Generator_UserColumnName="NRO_DOC" msprop:Generator_ColumnVarNameInTable="columnNRO_DOC" msprop:Generator_ColumnPropNameInRow="NRO_DOC" msprop:Generator_ColumnPropNameInTable="NRO_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_REF" msprop:Generator_UserColumnName="COD_REF" msprop:Generator_ColumnVarNameInTable="columnCOD_REF" msprop:Generator_ColumnPropNameInRow="COD_REF" msprop:Generator_ColumnPropNameInTable="COD_REFColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SERIE_REF" msprop:Generator_UserColumnName="SERIE_REF" msprop:Generator_ColumnVarNameInTable="columnSERIE_REF" msprop:Generator_ColumnPropNameInRow="SERIE_REF" msprop:Generator_ColumnPropNameInTable="SERIE_REFColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_REF" msprop:Generator_UserColumnName="NRO_REF" msprop:Generator_ColumnVarNameInTable="columnNRO_REF" msprop:Generator_ColumnPropNameInRow="NRO_REF" msprop:Generator_ColumnPropNameInTable="NRO_REFColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_REF" msprop:Generator_UserColumnName="FECHA_REF" msprop:Generator_ColumnVarNameInTable="columnFECHA_REF" msprop:Generator_ColumnPropNameInRow="FECHA_REF" msprop:Generator_ColumnPropNameInTable="FECHA_REFColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MONEDA" msprop:Generator_UserColumnName="MONEDA" msprop:Generator_ColumnVarNameInTable="columnMONEDA" msprop:Generator_ColumnPropNameInRow="MONEDA" msprop:Generator_ColumnPropNameInTable="MONEDAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DOLAR_MONTO" msprop:Generator_UserColumnName="DOLAR_MONTO" msprop:Generator_ColumnVarNameInTable="columnDOLAR_MONTO" msprop:Generator_ColumnPropNameInRow="DOLAR_MONTO" msprop:Generator_ColumnPropNameInTable="DOLAR_MONTOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COD_D_H" msprop:Generator_UserColumnName="COD_D_H" msprop:Generator_ColumnVarNameInTable="columnCOD_D_H" msprop:Generator_ColumnPropNameInRow="COD_D_H" msprop:Generator_ColumnPropNameInTable="COD_D_HColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TC" msprop:Generator_UserColumnName="TC" msprop:Generator_ColumnVarNameInTable="columnTC" msprop:Generator_ColumnPropNameInRow="TC" msprop:Generator_ColumnPropNameInTable="TCColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PER" msprop:Generator_UserColumnName="PER" msprop:Generator_ColumnVarNameInTable="columnPER" msprop:Generator_ColumnPropNameInRow="PER" msprop:Generator_ColumnPropNameInTable="PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_RET" msprop:Generator_UserColumnName="NRO_RET" msprop:Generator_ColumnVarNameInTable="columnNRO_RET" msprop:Generator_ColumnPropNameInRow="NRO_RET" msprop:Generator_ColumnPropNameInTable="NRO_RETColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DOLAR_RET" msprop:Generator_UserColumnName="DOLAR_RET" msprop:Generator_ColumnPropNameInRow="DOLAR_RET" msprop:Generator_ColumnVarNameInTable="columnDOLAR_RET" msprop:Generator_ColumnPropNameInTable="DOLAR_RETColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOLES_MONTO" msprop:Generator_UserColumnName="SOLES_MONTO" msprop:Generator_ColumnPropNameInRow="SOLES_MONTO" msprop:Generator_ColumnVarNameInTable="columnSOLES_MONTO" msprop:Generator_ColumnPropNameInTable="SOLES_MONTOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOLES_RET" msprop:Generator_UserColumnName="SOLES_RET" msprop:Generator_ColumnPropNameInRow="SOLES_RET" msprop:Generator_ColumnVarNameInTable="columnSOLES_RET" msprop:Generator_ColumnPropNameInTable="SOLES_RETColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_PER" msprop:Generator_UserColumnName="DES_PER" msprop:Generator_ColumnPropNameInRow="DES_PER" msprop:Generator_ColumnVarNameInTable="columnDES_PER" msprop:Generator_ColumnPropNameInTable="DES_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC_PER" msprop:Generator_UserColumnName="DOC_PER" msprop:Generator_ColumnPropNameInRow="DOC_PER" msprop:Generator_ColumnVarNameInTable="columnDOC_PER" msprop:Generator_ColumnPropNameInTable="DOC_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_RET" msprop:Generator_UserColumnName="FECHA_RET" msprop:Generator_ColumnVarNameInTable="columnFECHA_RET" msprop:Generator_ColumnPropNameInRow="FECHA_RET" msprop:Generator_ColumnPropNameInTable="FECHA_RETColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_AUX" msprop:Generator_UserColumnName="COD_AUX" msprop:Generator_ColumnPropNameInRow="COD_AUX" msprop:Generator_ColumnVarNameInTable="columnCOD_AUX" msprop:Generator_ColumnPropNameInTable="COD_AUXColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_COMP" msprop:Generator_UserColumnName="COD_COMP" msprop:Generator_ColumnPropNameInRow="COD_COMP" msprop:Generator_ColumnVarNameInTable="columnCOD_COMP" msprop:Generator_ColumnPropNameInTable="COD_COMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_COMP" msprop:Generator_UserColumnName="NRO_COMP" msprop:Generator_ColumnPropNameInRow="NRO_COMP" msprop:Generator_ColumnVarNameInTable="columnNRO_COMP" msprop:Generator_ColumnPropNameInTable="NRO_COMPColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

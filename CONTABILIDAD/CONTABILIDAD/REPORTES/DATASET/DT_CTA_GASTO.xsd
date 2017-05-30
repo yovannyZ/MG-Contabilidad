@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DT_CTA_GASTO" targetNamespace="http://tempuri.org/DT_CTA_GASTO.xsd" xmlns:mstns="http://tempuri.org/DT_CTA_GASTO.xsd" xmlns="http://tempuri.org/DT_CTA_GASTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="BD_COI02" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="BD_COI02 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CONTABILIDAD.My.MySettings.GlobalReference.Default.BD_COI02" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_COI02 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     
+B.COD_CPTO, 
+B.DESC_CPTO, 
+A.COD_AREA, 
+A.CUENTA_ENLACE, 
+A.CUENTA_DESTINO, 
+A.CUENTA_ORIGEN,                        
+CASE A.TIPO 
+WHEN 'I' THEN 'CTAS DE INGRESO' 
+WHEN 'G' THEN 'CTAS GASTO/INGRESO CON CC.' 
+ELSE 'CTAS DE BALANCE' END AS TIPO, 
+C.DESC_CORTA 
+FROM     
+CONCEPTO_CUENTA A 
+INNER JOIN MAESTRO_CONCEPTOS B ON
+A.COD_CPTO=B.COD_CPTO
+INNER JOIN AREA C ON
+A.COD_AREA =C.COD_AREA</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_CPTO" DataSetColumn="COD_CPTO" />
+              <Mapping SourceColumn="DESC_CPTO" DataSetColumn="DESC_CPTO" />
+              <Mapping SourceColumn="COD_AREA" DataSetColumn="COD_AREA" />
+              <Mapping SourceColumn="CUENTA_ENLACE" DataSetColumn="CUENTA_ENLACE" />
+              <Mapping SourceColumn="CUENTA_DESTINO" DataSetColumn="CUENTA_DESTINO" />
+              <Mapping SourceColumn="CUENTA_ORIGEN" DataSetColumn="CUENTA_ORIGEN" />
+              <Mapping SourceColumn="TIPO" DataSetColumn="TIPO" />
+              <Mapping SourceColumn="DESC_CORTA" DataSetColumn="DESC_CORTA" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable2TableAdapter" GeneratorDataComponentClassName="DataTable2TableAdapter" Name="DataTable2" UserDataComponentName="DataTable2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_COI02 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     
+A.COD_CPTO, 
+B.DESC_CPTO, 
+A.COD_AREA, 
+A.CUENTA_ENLACE, 
+A.CUENTA_DESTINO, 
+A.CUENTA_ORIGEN,                        
+CASE A.TIPO 
+WHEN 'I' THEN 'INGRESO' 
+WHEN 'G' THEN 'GASTO' 
+ELSE 'BALANCE' END AS TIPO, 
+C.DESC_CORTA 
+FROM     
+CONCEPTO_CUENTA A 
+LEFT JOIN MAESTRO_CONCEPTOS B ON
+A.COD_CPTO=B.COD_CPTO
+LEFT JOIN AREA C ON
+A.COD_AREA =C.COD_AREA </CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_CPTO" DataSetColumn="COD_CPTO" />
+              <Mapping SourceColumn="DESC_CPTO" DataSetColumn="DESC_CPTO" />
+              <Mapping SourceColumn="COD_AREA" DataSetColumn="COD_AREA" />
+              <Mapping SourceColumn="CUENTA_ENLACE" DataSetColumn="CUENTA_ENLACE" />
+              <Mapping SourceColumn="CUENTA_DESTINO" DataSetColumn="CUENTA_DESTINO" />
+              <Mapping SourceColumn="CUENTA_ORIGEN" DataSetColumn="CUENTA_ORIGEN" />
+              <Mapping SourceColumn="TIPO" DataSetColumn="TIPO" />
+              <Mapping SourceColumn="DESC_CORTA" DataSetColumn="DESC_CORTA" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DT_CTA_GASTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DT_CTA_GASTO" msprop:Generator_DataSetName="DT_CTA_GASTO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_CPTO" msprop:Generator_UserColumnName="COD_CPTO" msprop:Generator_ColumnVarNameInTable="columnCOD_CPTO" msprop:Generator_ColumnPropNameInRow="COD_CPTO" msprop:Generator_ColumnPropNameInTable="COD_CPTOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESC_CPTO" msprop:Generator_UserColumnName="DESC_CPTO" msprop:Generator_ColumnVarNameInTable="columnDESC_CPTO" msprop:Generator_ColumnPropNameInRow="DESC_CPTO" msprop:Generator_ColumnPropNameInTable="DESC_CPTOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COD_AREA" msprop:Generator_UserColumnName="COD_AREA" msprop:Generator_ColumnVarNameInTable="columnCOD_AREA" msprop:Generator_ColumnPropNameInRow="COD_AREA" msprop:Generator_ColumnPropNameInTable="COD_AREAColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUENTA_ENLACE" msprop:Generator_UserColumnName="CUENTA_ENLACE" msprop:Generator_ColumnVarNameInTable="columnCUENTA_ENLACE" msprop:Generator_ColumnPropNameInRow="CUENTA_ENLACE" msprop:Generator_ColumnPropNameInTable="CUENTA_ENLACEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUENTA_DESTINO" msprop:Generator_UserColumnName="CUENTA_DESTINO" msprop:Generator_ColumnVarNameInTable="columnCUENTA_DESTINO" msprop:Generator_ColumnPropNameInRow="CUENTA_DESTINO" msprop:Generator_ColumnPropNameInTable="CUENTA_DESTINOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUENTA_ORIGEN" msprop:Generator_UserColumnName="CUENTA_ORIGEN" msprop:Generator_ColumnVarNameInTable="columnCUENTA_ORIGEN" msprop:Generator_ColumnPropNameInRow="CUENTA_ORIGEN" msprop:Generator_ColumnPropNameInTable="CUENTA_ORIGENColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIPO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESC_CORTA" msprop:Generator_UserColumnName="DESC_CORTA" msprop:Generator_ColumnVarNameInTable="columnDESC_CORTA" msprop:Generator_ColumnPropNameInRow="DESC_CORTA" msprop:Generator_ColumnPropNameInTable="DESC_CORTAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowClassName="DataTable2Row" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_TablePropName="DataTable2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_CPTO" msprop:Generator_UserColumnName="COD_CPTO" msprop:Generator_ColumnVarNameInTable="columnCOD_CPTO" msprop:Generator_ColumnPropNameInRow="COD_CPTO" msprop:Generator_ColumnPropNameInTable="COD_CPTOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESC_CPTO" msprop:Generator_UserColumnName="DESC_CPTO" msprop:Generator_ColumnVarNameInTable="columnDESC_CPTO" msprop:Generator_ColumnPropNameInRow="DESC_CPTO" msprop:Generator_ColumnPropNameInTable="DESC_CPTOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COD_AREA" msprop:Generator_UserColumnName="COD_AREA" msprop:Generator_ColumnVarNameInTable="columnCOD_AREA" msprop:Generator_ColumnPropNameInRow="COD_AREA" msprop:Generator_ColumnPropNameInTable="COD_AREAColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUENTA_ENLACE" msprop:Generator_UserColumnName="CUENTA_ENLACE" msprop:Generator_ColumnVarNameInTable="columnCUENTA_ENLACE" msprop:Generator_ColumnPropNameInRow="CUENTA_ENLACE" msprop:Generator_ColumnPropNameInTable="CUENTA_ENLACEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUENTA_DESTINO" msprop:Generator_UserColumnName="CUENTA_DESTINO" msprop:Generator_ColumnVarNameInTable="columnCUENTA_DESTINO" msprop:Generator_ColumnPropNameInRow="CUENTA_DESTINO" msprop:Generator_ColumnPropNameInTable="CUENTA_DESTINOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUENTA_ORIGEN" msprop:Generator_UserColumnName="CUENTA_ORIGEN" msprop:Generator_ColumnVarNameInTable="columnCUENTA_ORIGEN" msprop:Generator_ColumnPropNameInRow="CUENTA_ORIGEN" msprop:Generator_ColumnPropNameInTable="CUENTA_ORIGENColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIPO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="26" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESC_CORTA" msprop:Generator_UserColumnName="DESC_CORTA" msprop:Generator_ColumnVarNameInTable="columnDESC_CORTA" msprop:Generator_ColumnPropNameInRow="DESC_CORTA" msprop:Generator_ColumnPropNameInTable="DESC_CORTAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:COD_CPTO" />
+      <xs:field xpath="mstns:COD_AREA" />
+      <xs:field xpath="mstns:TIPO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

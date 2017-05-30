@@ -1,0 +1,9 @@
+Public Class REP_CERTIFICADO_4TA
+
+    Private Sub REP_CERTIFICADO_4TA_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'DT_CONFIG.REPORTE_DET_CERTIFICADO_4TA' Puede moverla o quitarla según sea necesario.
+        'Me.REPORTE_DET_CERTIFICADO_4TATableAdapter.Fill(Me.DT_CONFIG.REPORTE_DET_CERTIFICADO_4TA)
+
+        'Me.ReportViewer1.RefreshReport()
+    End Sub
+End Class

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GenerarFactura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="documento" type="tns:DocumentoElectronico" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="DocumentoElectronico">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Emisor" type="tns:Contribuyente" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Receptor" type="tns:Contribuyente" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FechaEmision" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Moneda" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoOperacion" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Gravadas" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Gratuitas" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Inafectas" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Exoneradas" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="DescuentoGlobal" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfDetalleDocumento" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TotalVenta" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TotalIgv" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TotalIsc" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TotalOtrosTributos" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MontoEnLetras" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PlacaVehiculo" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MontoPercepcion" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MontoDetraccion" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DatoAdicionales" type="tns:ArrayOfDatoAdicional" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoDocAnticipo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DocAnticipo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MonedaAnticipo" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MontoAnticipo" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DatosGuiaTransportista" type="tns:DatosGuia" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Relacionados" type="tns:ArrayOfDocumentoRelacionado" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Discrepancias" type="tns:ArrayOfDiscrepancia" />
+      <xs:element minOccurs="1" maxOccurs="1" name="CalculoIgv" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="CalculoIsc" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="CalculoDetraccion" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Contribuyente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="NroDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NombreLegal" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NombreComercial" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Ubigeo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Direccion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Urbanizacion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Departamento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Provincia" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Distrito" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfDetalleDocumento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DetalleDocumento" nillable="true" type="tns:DetalleDocumento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DetalleDocumento">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Id" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Cantidad" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="UnidadMedida" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoItem" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Descripcion" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ValorUnitario" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="PrecioVenta" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoPrecio" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoImpuesto" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Impuesto" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ImpuestoSelectivo" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="OtroImpuesto" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Descuento" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TotalVenta" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Suma" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfDatoAdicional">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DatoAdicional" nillable="true" type="tns:DatoAdicional" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DatoAdicional">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Codigo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Contenido" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DatosGuia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="DireccionDestino" type="tns:Contribuyente" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DireccionOrigen" type="tns:Contribuyente" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RucTransportista" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoDocTransportista" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NombreTransportista" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NroLicenciaConducir" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PlacaVehiculo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoAutorizacion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MarcaVehiculo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ModoTransporte" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="UnidadMedida" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="PesoBruto" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfDocumentoRelacionado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentoRelacionado" nillable="true" type="tns:DocumentoRelacionado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DocumentoRelacionado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="NroDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoDocumento" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfDiscrepancia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Discrepancia" nillable="true" type="tns:Discrepancia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Discrepancia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="NroReferencia" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Tipo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Descripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenerarFacturaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GenerarFacturaResult" type="tns:DocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="DocumentoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespuestaComun">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="TramaXmlSinFirma" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RespuestaComun" abstract="true">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Exito" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MensajeError" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Pila" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenerarNotaCredito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="documento" type="tns:DocumentoElectronico" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarNotaCreditoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GenerarNotaCreditoResult" type="tns:DocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Firmar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:FirmadoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="FirmadoRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CertificadoDigital" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PasswordCertificado" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TramaXmlSinFirma" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="UnSoloNodoExtension" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FirmarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FirmarResult" type="tns:FirmadoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="FirmadoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespuestaComun">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="TramaXmlFirmado" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ResumenFirma" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ValorFirma" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EnviarDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:EnviarDocumentoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="EnviarDocumentoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EnvioDocumentoComun">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="TramaXmlFirmado" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RutaXml" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RutaCdr" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RutaPdf" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RutaImagen" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Moneda" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Smpt" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PuertoSmtp" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EnvioDocumentoComun" abstract="true">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Ruc" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="UsuarioSol" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ClaveSol" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IdDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EndPointUrl" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EmailEmisor" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PasswordEmisor" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EmailCliente" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NombreEmpresa" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="WebEmpresa" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FechaEmision" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TotalDocumento" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnviarDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnviarDocumentoResult" type="tns:EnviarDocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="EnviarDocumentoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespuestaComunConArchivo">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="CodigoRespuesta" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MensajeRespuesta" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TramaZipCdr" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ErrorEmail" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ErrorArchivos" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RespuestaComunConArchivo" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespuestaComun">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="NombreArchivo" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerarCodigoBarrasPDF417">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:CodigoBarrasRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CodigoBarrasRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="RutaGuardar" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TextoCodigo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PathArchivoPdf" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorResumen" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IdDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoBarrasBytes" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenerarCodigoBarrasPDF417Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GenerarCodigoBarrasPDF417Result" type="tns:CodigoBarrasResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CodigoBarrasResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespuestaComun">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="CodigoBarrasBytes" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerarNotaDebito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="documento" type="tns:DocumentoElectronico" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarNotaDebitoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GenerarNotaDebitoResult" type="tns:DocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarComunicacionBaja">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="baja" type="tns:ComunicacionBaja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ComunicacionBaja">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentoResumen">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Bajas" type="tns:ArrayOfDocumentoBaja" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DocumentoResumen" abstract="true">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FechaEmision" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FechaReferencia" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Emisor" type="tns:Contribuyente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfDocumentoBaja">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentoBaja" nillable="true" type="tns:DocumentoBaja" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DocumentoBaja">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentoResumenDetalle">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Correlativo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MotivoBaja" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DocumentoResumenDetalle" abstract="true">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TipoDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Serie" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenerarComunicacionBajaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GenerarComunicacionBajaResult" type="tns:DocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarResumen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:EnviarDocumentoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarResumenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnviarResumenResult" type="tns:EnviarResumenResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="EnviarResumenResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespuestaComunConArchivo">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="NroTicket" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsultarTicket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:ConsultaTicketRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ConsultaTicketRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EnvioDocumentoComun">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="NroTicket" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Ruta" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsultarTicketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarTicketResult" type="tns:EnviarDocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarResumenDiario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="resumen" type="tns:ResumenDiarioNuevo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ResumenDiarioNuevo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentoResumen">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Resumenes" type="tns:ArrayOfGrupoResumenNuevo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfGrupoResumenNuevo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GrupoResumenNuevo" nillable="true" type="tns:GrupoResumenNuevo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GrupoResumenNuevo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GrupoResumen">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="IdDocumento" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TipoDocumentoReceptor" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="NroDocumentoReceptor" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CodigoEstadoItem" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentoRelacionado" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TipoDocumentoRelacionado" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GrupoResumen">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentoResumenDetalle">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="CorrelativoInicio" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CorrelativoFin" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Moneda" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TotalVenta" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TotalDescuentos" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TotalIgv" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TotalIsc" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TotalOtrosImpuestos" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Gravadas" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Exoneradas" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Inafectas" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Exportacion" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Gratuitas" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerarResumenDiarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GenerarResumenDiarioResult" type="tns:DocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarRetencion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="retencion" type="tns:DocumentoRetencion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="DocumentoRetencion">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentoSunatBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="RegimenRetencion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TasaRetencion" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ImporteTotalRetenido" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ImporteTotalPagado" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentosRelacionados" type="tns:ArrayOfItemRetencion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DocumentoSunatBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FechaEmision" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Emisor" type="tns:Contribuyente" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Receptor" type="tns:Contribuyente" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Moneda" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfItemRetencion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ItemRetencion" nillable="true" type="tns:ItemRetencion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ItemRetencion">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ItemSunatBase">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ImporteSinRetencion" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ImporteRetenido" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FechaRetencion" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ItemSunatBase">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentoRelacionado">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="FechaEmision" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ImporteTotal" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MonedaDocumentoRelacionado" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="NumeroPago" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ImporteTotalNeto" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FechaPago" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TipoCambio" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FechaTipoCambio" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerarRetencionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GenerarRetencionResult" type="tns:DocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:EnviarDocumentoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnviarMailResult" type="tns:ResponseGenerador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ResponseGenerador">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespuestaComun" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsultarCDR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:ConsultaConstanciaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ConsultaConstanciaRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EnvioDocumentoComun">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Serie" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Numero" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsultarCDRResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarCDRResult" type="tns:EnviarDocumentoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

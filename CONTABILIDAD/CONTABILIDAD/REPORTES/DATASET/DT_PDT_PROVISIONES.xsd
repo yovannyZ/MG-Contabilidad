@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DT_PDT_PROVISIONES" targetNamespace="http://tempuri.org/DT_PDT_PROVISIONES.xsd" xmlns:mstns="http://tempuri.org/DT_PDT_PROVISIONES.xsd" xmlns="http://tempuri.org/DT_PDT_PROVISIONES.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DT_PDT_PROVISIONES" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DT_PDT_PROVISIONES" msprop:Generator_DataSetName="DT_PDT_PROVISIONES">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PDT" msprop:Generator_UserTableName="PDT" msprop:Generator_RowDeletedName="PDTRowDeleted" msprop:Generator_RowChangedName="PDTRowChanged" msprop:Generator_RowClassName="PDTRow" msprop:Generator_RowChangingName="PDTRowChanging" msprop:Generator_RowEvArgName="PDTRowChangeEvent" msprop:Generator_RowEvHandlerName="PDTRowChangeEventHandler" msprop:Generator_TableClassName="PDTDataTable" msprop:Generator_TableVarName="tablePDT" msprop:Generator_RowDeletingName="PDTRowDeleting" msprop:Generator_TablePropName="PDT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_DOC" msprop:Generator_UserColumnName="COD_DOC" msprop:Generator_ColumnVarNameInTable="columnCOD_DOC" msprop:Generator_ColumnPropNameInRow="COD_DOC" msprop:Generator_ColumnPropNameInTable="COD_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DES_DOC" msprop:Generator_UserColumnName="DES_DOC" msprop:Generator_ColumnVarNameInTable="columnDES_DOC" msprop:Generator_ColumnPropNameInRow="DES_DOC" msprop:Generator_ColumnPropNameInTable="DES_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_DOC" msprop:Generator_UserColumnName="NRO_DOC" msprop:Generator_ColumnVarNameInTable="columnNRO_DOC" msprop:Generator_ColumnPropNameInRow="NRO_DOC" msprop:Generator_ColumnPropNameInTable="NRO_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FEC_DOC" msprop:Generator_UserColumnName="FEC_DOC" msprop:Generator_ColumnVarNameInTable="columnFEC_DOC" msprop:Generator_ColumnPropNameInRow="FEC_DOC" msprop:Generator_ColumnPropNameInTable="FEC_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_PER" msprop:Generator_UserColumnName="COD_PER" msprop:Generator_ColumnVarNameInTable="columnCOD_PER" msprop:Generator_ColumnPropNameInRow="COD_PER" msprop:Generator_ColumnPropNameInTable="COD_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC_PER" msprop:Generator_UserColumnName="DOC_PER" msprop:Generator_ColumnVarNameInTable="columnDOC_PER" msprop:Generator_ColumnPropNameInRow="DOC_PER" msprop:Generator_ColumnPropNameInTable="DOC_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DES_PER" msprop:Generator_UserColumnName="DES_PER" msprop:Generator_ColumnVarNameInTable="columnDES_PER" msprop:Generator_ColumnPropNameInRow="DES_PER" msprop:Generator_ColumnPropNameInTable="DES_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BI" msprop:Generator_UserColumnName="BI" msprop:Generator_ColumnVarNameInTable="columnBI" msprop:Generator_ColumnPropNameInRow="BI" msprop:Generator_ColumnPropNameInTable="BIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IGV" msprop:Generator_UserColumnName="IGV" msprop:Generator_ColumnVarNameInTable="columnIGV" msprop:Generator_ColumnPropNameInRow="IGV" msprop:Generator_ColumnPropNameInTable="IGVColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RENTA" msprop:Generator_UserColumnName="RENTA" msprop:Generator_ColumnVarNameInTable="columnRENTA" msprop:Generator_ColumnPropNameInRow="RENTA" msprop:Generator_ColumnPropNameInTable="RENTAColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TC" msprop:Generator_UserColumnName="TC" msprop:Generator_ColumnVarNameInTable="columnTC" msprop:Generator_ColumnPropNameInRow="TC" msprop:Generator_ColumnPropNameInTable="TCColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AUX" msprop:Generator_UserColumnName="AUX" msprop:Generator_ColumnVarNameInTable="columnAUX" msprop:Generator_ColumnPropNameInRow="AUX" msprop:Generator_ColumnPropNameInTable="AUXColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COM" msprop:Generator_UserColumnName="COM" msprop:Generator_ColumnVarNameInTable="columnCOM" msprop:Generator_ColumnPropNameInRow="COM" msprop:Generator_ColumnPropNameInTable="COMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_COM" msprop:Generator_UserColumnName="NRO_COM" msprop:Generator_ColumnVarNameInTable="columnNRO_COM" msprop:Generator_ColumnPropNameInRow="NRO_COM" msprop:Generator_ColumnPropNameInTable="NRO_COMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MONEDA" msprop:Generator_UserColumnName="MONEDA" msprop:Generator_ColumnVarNameInTable="columnMONEDA" msprop:Generator_ColumnPropNameInRow="MONEDA" msprop:Generator_ColumnPropNameInTable="MONEDAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_TIPO_DOC" msprop:Generator_UserColumnName="COD_TIPO_DOC" msprop:Generator_ColumnVarNameInTable="columnCOD_TIPO_DOC" msprop:Generator_ColumnPropNameInRow="COD_TIPO_DOC" msprop:Generator_ColumnPropNameInTable="COD_TIPO_DOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRO_DOC_PER" msprop:Generator_UserColumnName="NRO_DOC_PER" msprop:Generator_ColumnVarNameInTable="columnNRO_DOC_PER" msprop:Generator_ColumnPropNameInRow="NRO_DOC_PER" msprop:Generator_ColumnPropNameInTable="NRO_DOC_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO_PER" msprop:Generator_UserColumnName="TIPO_PER" msprop:Generator_ColumnVarNameInTable="columnTIPO_PER" msprop:Generator_ColumnPropNameInRow="TIPO_PER" msprop:Generator_ColumnPropNameInTable="TIPO_PERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IMPORTE" msprop:Generator_UserColumnName="IMPORTE" msprop:Generator_ColumnPropNameInRow="IMPORTE" msprop:Generator_ColumnVarNameInTable="columnIMPORTE" msprop:Generator_ColumnPropNameInTable="IMPORTEColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

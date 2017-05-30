@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="FacturacionServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:62872/FacturacionServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFacturacionServices_GenerarFactura_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarFactura" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarFactura_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarNotaCredito_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarNotaCredito" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarNotaCredito_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarNotaCreditoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_Firmar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Firmar" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_Firmar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FirmarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_EnviarDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_EnviarDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarCodigoBarrasPDF417_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarCodigoBarrasPDF417" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarCodigoBarrasPDF417_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarCodigoBarrasPDF417Response" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarNotaDebito_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarNotaDebito" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarNotaDebito_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarNotaDebitoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarComunicacionBaja_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarComunicacionBaja" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarComunicacionBaja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarComunicacionBajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_EnviarResumen_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarResumen" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_EnviarResumen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarResumenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_ConsultarTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTicket" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_ConsultarTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarResumenDiario_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarResumenDiario" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarResumenDiario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarResumenDiarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarRetencion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarRetencion" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_GenerarRetencion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarRetencionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_EnviarMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMail" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_EnviarMail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_ConsultarCDR_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCDR" />
+  </wsdl:message>
+  <wsdl:message name="IFacturacionServices_ConsultarCDR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCDRResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFacturacionServices">
+    <wsdl:operation name="GenerarFactura">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarFactura" message="tns:IFacturacionServices_GenerarFactura_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarFacturaResponse" message="tns:IFacturacionServices_GenerarFactura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarNotaCredito">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarNotaCredito" message="tns:IFacturacionServices_GenerarNotaCredito_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarNotaCreditoResponse" message="tns:IFacturacionServices_GenerarNotaCredito_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Firmar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/Firmar" message="tns:IFacturacionServices_Firmar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/FirmarResponse" message="tns:IFacturacionServices_Firmar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarDocumento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/EnviarDocumento" message="tns:IFacturacionServices_EnviarDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/EnviarDocumentoResponse" message="tns:IFacturacionServices_EnviarDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCodigoBarrasPDF417">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarCodigoBarrasPDF417" message="tns:IFacturacionServices_GenerarCodigoBarrasPDF417_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarCodigoBarrasPDF417Response" message="tns:IFacturacionServices_GenerarCodigoBarrasPDF417_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarNotaDebito">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarNotaDebito" message="tns:IFacturacionServices_GenerarNotaDebito_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarNotaDebitoResponse" message="tns:IFacturacionServices_GenerarNotaDebito_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarComunicacionBaja">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarComunicacionBaja" message="tns:IFacturacionServices_GenerarComunicacionBaja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarComunicacionBajaResponse" message="tns:IFacturacionServices_GenerarComunicacionBaja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarResumen">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/EnviarResumen" message="tns:IFacturacionServices_EnviarResumen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/EnviarResumenResponse" message="tns:IFacturacionServices_EnviarResumen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/ConsultarTicket" message="tns:IFacturacionServices_ConsultarTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/ConsultarTicketResponse" message="tns:IFacturacionServices_ConsultarTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarResumenDiario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarResumenDiario" message="tns:IFacturacionServices_GenerarResumenDiario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarResumenDiarioResponse" message="tns:IFacturacionServices_GenerarResumenDiario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarRetencion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarRetencion" message="tns:IFacturacionServices_GenerarRetencion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/GenerarRetencionResponse" message="tns:IFacturacionServices_GenerarRetencion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/EnviarMail" message="tns:IFacturacionServices_EnviarMail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/EnviarMailResponse" message="tns:IFacturacionServices_EnviarMail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCDR">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacturacionServices/ConsultarCDR" message="tns:IFacturacionServices_ConsultarCDR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacturacionServices/ConsultarCDRResponse" message="tns:IFacturacionServices_ConsultarCDR_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFacturacionServices" type="tns:IFacturacionServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerarFactura">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/GenerarFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarNotaCredito">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/GenerarNotaCredito" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Firmar">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/Firmar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarDocumento">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/EnviarDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCodigoBarrasPDF417">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/GenerarCodigoBarrasPDF417" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarNotaDebito">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/GenerarNotaDebito" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarComunicacionBaja">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/GenerarComunicacionBaja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarResumen">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/EnviarResumen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTicket">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/ConsultarTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarResumenDiario">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/GenerarResumenDiario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarRetencion">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/GenerarRetencion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMail">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/EnviarMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCDR">
+      <soap:operation soapAction="http://tempuri.org/IFacturacionServices/ConsultarCDR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FacturacionServices">
+    <wsdl:port name="BasicHttpBinding_IFacturacionServices" binding="tns:BasicHttpBinding_IFacturacionServices">
+      <soap:address location="http://localhost:62872/FacturacionServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
