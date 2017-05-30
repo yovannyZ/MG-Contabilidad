@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuracion>
+
+  <!--Formato basados es Milimetros-->
+
+  <!--Formato 01=Banco de Credito-->
+  <Banco>
+    <Formato>01</Formato>
+    <AnchoImpresora>85.4</AnchoImpresora>
+    <AnchoPapel>72</AnchoPapel>
+    <AltoPapel>154</AltoPapel>
+    <Importe>14,117</Importe>
+    <Nombre>27,27</Nombre>
+    <Texto>35,8</Texto>
+    <Dia>14,86</Dia>
+    <Mes>14,92</Mes>
+    <Año>14,98</Año>
+  </Banco>
+  
+  <!--Formato 02=Banco Continental-->
+  <Banco>
+    <Formato>02</Formato>
+    <AnchoImpresora>85.4</AnchoImpresora>
+    <AnchoPapel>72</AnchoPapel>
+    <AltoPapel>156</AltoPapel>
+    <Importe>11,113</Importe>
+    <Nombre>27,25</Nombre>
+    <Texto>35,8</Texto>
+    <Dia>11,76</Dia>
+    <Mes>11,86</Mes>
+    <Año>11,96</Año>
+  </Banco>
+
+  <!--Formato 021=Banco Continental Diferido-->
+  <Banco>
+    <Formato>021</Formato>
+    <AnchoImpresora>85.4</AnchoImpresora>
+    <AnchoPapel>72</AnchoPapel>
+    <AltoPapel>156</AltoPapel>
+    <Importe>11,125</Importe>
+    <Nombre>27,25</Nombre>
+    <Texto>35,8</Texto>
+    <Dia>11,69</Dia>
+    <Mes>11,75</Mes>
+    <Año>11,83</Año>
+    <DiaPago>11,93</DiaPago>
+    <MesPago>11,102</MesPago>
+    <AñoPago>11,110</AñoPago>
+  </Banco>
+  
+  <!--Formato 03=Banco Interbank S/-->
+  <Banco>
+    <Formato>03</Formato>
+    <AnchoImpresora>85.4</AnchoImpresora>
+    <AnchoPapel>72</AnchoPapel>
+    <AltoPapel>156</AltoPapel>
+    <Importe>14,113</Importe>
+    <Nombre>29,25</Nombre>
+    <Texto>36,12</Texto>
+    <Dia>11,68</Dia>
+    <Mes>11,75</Mes>
+    <Año>11,81</Año>
+  </Banco>
+  
+  <!--Formato 04=Banco Scotiabank-->
+  <Banco>
+    <Formato>04</Formato>
+    <AnchoImpresora>85.4</AnchoImpresora>
+    <AnchoPapel>72</AnchoPapel>
+    <AltoPapel>156</AltoPapel>
+    <Importe>14,139</Importe>
+    <Nombre>29,25</Nombre>
+    <Texto>36,12</Texto>
+    <Dia>11,97</Dia>
+    <Mes>11,105</Mes>
+    <Año>11,111</Año>
+  </Banco>
+</Configuracion>

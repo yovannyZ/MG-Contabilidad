@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuracion>
+  <Empresa>
+    <Codigo>01</Codigo>
+    <Equivalente>1</Equivalente>
+  </Empresa>
+  <Empresa>
+    <Codigo>03</Codigo>
+    <Equivalente>4</Equivalente>
+  </Empresa>
+  <Empresa>
+    <Codigo>04</Codigo>
+    <Equivalente>5</Equivalente>
+  </Empresa>
+</Configuracion>

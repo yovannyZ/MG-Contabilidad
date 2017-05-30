@@ -1,0 +1,2798 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CONTABILIDAD
+</name>
+</assembly>
+<members>
+<member name="T:CONTABILIDAD.DT_CONFIG_PROV.CONFIG_PROVDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV.CONFIG_PROV1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV.CONFIG_PROVRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV.CONFIG_PROV1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV.CONFIG_PROVRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV.CONFIG_PROV1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP1.CUADRE_PCTASXP_VS_TCTASXP_DOC1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP1.CUADRE_PCTASXP_VS_TCTASXP_DOC1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP1.CUADRE_PCTASXP_VS_TCTASXP_DOC1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP1TableAdapters.CUADRE_PCTASXP_VS_TCTASXP_DOC1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_CC.REPORTE_CUENTA_DEPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_CC.REPORTE_CUENTA_DEPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_CC.REPORTE_CUENTA_DEPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_CC">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_CCTableAdapters.REPORTE_CUENTA_DEPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MCPTO.MAESTRO_CONCEPTOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MCPTO.MAESTRO_CONCEPTOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MCPTO.MAESTRO_CONCEPTOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MCPTO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MCPTOTableAdapters.MAESTRO_CONCEPTOSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXP.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXP.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXP.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXP">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXPTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_CONCILIADASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_SALDOS_TCXPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_TCXP_KARDEX_ACUMULADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_TCXP_KARDEX_NO_ACUMULADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_SALDOS_TCXP2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_ACTUALIZADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_CONCILIADASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_SALDOS_TCXPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_TCXP_KARDEX_ACUMULADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_TCXP_KARDEX_NO_ACUMULADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_SALDOS_TCXP2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_ACTUALIZADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_CONCILIADASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_SALDOS_TCXPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_TCXP_KARDEX_ACUMULADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_TCXP_KARDEX_NO_ACUMULADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_SALDOS_TCXP2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP.REPORTE_ACTUALIZADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXP">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXPTableAdapters.REPORTE_CONCILIADASTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXPTableAdapters.REPORTE_SALDOS_TCXPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXPTableAdapters.REPORTE_TCXP_KARDEX_ACUMULADOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXPTableAdapters.REPORTE_TCXP_KARDEX_NO_ACUMULADOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXPTableAdapters.REPORTE_SALDOS_TCXP2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DsConciliadasSinCuadrar.Dt_01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsConciliadasSinCuadrar.Dt_01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsConciliadasSinCuadrar.Dt_01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DsConciliadasSinCuadrar">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIFERIDOS.REPORTE_I_DIFERIDODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIFERIDOS.REPORTE_I_DIFERIDORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIFERIDOS.REPORTE_I_DIFERIDORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIFERIDOS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIFERIDOSTableAdapters.REPORTE_I_DIFERIDOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_LIBRO_BANCOS.LIBRO_BANCOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_LIBRO_BANCOS.LIBRO_BANCOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_LIBRO_BANCOS.LIBRO_BANCOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_LIBRO_BANCOS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_LIBRO_BANCOSTableAdapters.LIBRO_BANCOSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDAD.CONSULTA_FORMULARIO_SEGURIDADDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDAD.CONSULTA_MANT_FORMULARIO_SEGURIDADDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDAD.CONSULTA_FORMULARIO_SEGURIDADRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDAD.CONSULTA_MANT_FORMULARIO_SEGURIDADRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDAD.CONSULTA_FORMULARIO_SEGURIDADRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDAD.CONSULTA_MANT_FORMULARIO_SEGURIDADRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDAD">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDADTableAdapters.CONSULTA_FORMULARIO_SEGURIDADTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.FORMULARIO_SEGURIDADTableAdapters.CONSULTA_MANT_FORMULARIO_SEGURIDADTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTE.REPORTE_BANCO_CONC_PTEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTE.REPORTE_BANCO_CONC_PTE2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTE.REPORTE_BANCO_CONC_PTERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTE.REPORTE_BANCO_CONC_PTE2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTE.REPORTE_BANCO_CONC_PTERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTE.REPORTE_BANCO_CONC_PTE2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTE">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTETableAdapters.REPORTE_BANCO_CONC_PTETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONC_PTETableAdapters.REPORTE_BANCO_CONC_PTE2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_RV.REPORTE_REGISTRO_VENTASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_RV.REPORTE_REGISTRO_VENTASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_RV.REPORTE_REGISTRO_VENTASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_RV">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_RVTableAdapters.REPORTE_REGISTRO_VENTASTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_CXP_CANC12DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_CXC_CANC1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_FLUJO_EFECTIVODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_CXP_CANC12Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_CXC_CANC1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_FLUJO_EFECTIVORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_CXP_CANC12RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_CXC_CANC1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS.REPORTE_FLUJO_EFECTIVORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOSTableAdapters.REPORTE_CXP_CANC12TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_VARIOSTableAdapters.REPORTE_CXC_CANC1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC1.CUADRE_PCTASXC_VS_TCTASXC_DOC1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC1.CUADRE_PCTASXC_VS_TCTASXC_DOC1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC1.CUADRE_PCTASXC_VS_TCTASXC_DOC1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC1TableAdapters.CUADRE_PCTASXC_VS_TCTASXC_DOC1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV3.CONFIG_PROV3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV3.CONFIG_PROV3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV3.CONFIG_PROV3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV3">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTAS.CUADRE_TCON_VS_TCTASXCDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTAS.CUADRE_TCON_VS_TCTASXPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTAS.CUADRE_TCON_VS_TCTASXCRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTAS.CUADRE_TCON_VS_TCTASXPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTAS.CUADRE_TCON_VS_TCTASXCRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTAS.CUADRE_TCON_VS_TCTASXPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTAS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTASTableAdapters.CUADRE_TCON_VS_TCTASXCTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CUADRE_TCON_TCTASTableAdapters.CUADRE_TCON_VS_TCTASXPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_CONT_BCO.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_CONT_BCO.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_CONT_BCO.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_CONT_BCO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_CONT_BCOTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MAYOR.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MAYOR.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MAYOR.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MAYOR">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.REPORTE_M_AUTOMATICASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.REPORTE_M_CUENTASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.CUADRE_AUTOMATICADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.REPORTE_M_AUTOMATICASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.REPORTE_M_CUENTASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.CUADRE_AUTOMATICARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.REPORTE_M_AUTOMATICASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.REPORTE_M_CUENTASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS.CUADRE_AUTOMATICARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROSTableAdapters.REPORTE_M_AUTOMATICASTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROSTableAdapters.REPORTE_M_CUENTASTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.REPORTE_MAESTROSTableAdapters.CUADRE_AUTOMATICATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.DtUnidadNegocioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.DtUnidadNegocioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.DtUnidadNegocioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto.Dt_4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DsUnidadNegocioConcepto">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPARABLE.REPORTE_CUENTA_REPARABLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPARABLE.REPORTE_CUENTA_REPARABLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPARABLE.REPORTE_CUENTA_REPARABLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPARABLE">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPARABLETableAdapters.REPORTE_CUENTA_REPARABLETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CONCILICACION.CONCILIACIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CONCILICACION.CONCILIACIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CONCILICACION.CONCILIACIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CONCILICACION">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CONCILICACIONTableAdapters.CONCILIACIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.CENTRO_COSTOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.PROYECTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.AUX_COMPROBANTEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.CENTRO_COSTOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.PROYECTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.AUX_COMPROBANTERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.CENTRO_COSTOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.PROYECTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS.AUX_COMPROBANTERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOSTableAdapters.CENTRO_COSTOSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOSTableAdapters.PROYECTOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CENTRO_COSTOSTableAdapters.AUX_COMPROBANTETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.REPORTE_REGISTRO_COMPRASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.REPORTE_DET_CERTIFICADO_4TADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.REPORTE_REGISTRO_COMPRASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.REPORTE_DET_CERTIFICADO_4TARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.REPORTE_REGISTRO_COMPRASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.REPORTE_DET_CERTIFICADO_4TARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIGTableAdapters.REPORTE_REGISTRO_COMPRASTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIGTableAdapters.REPORTE_DET_CERTIFICADO_4TATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_SALDOS.REPORTE_MAESTRO_SALDOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_SALDOS.REPORTE_MAESTRO_SALDOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_SALDOS.REPORTE_MAESTRO_SALDOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_SALDOS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_SALDOSTableAdapters.REPORTE_MAESTRO_SALDOSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONA1.REPORTE_PERSONAS1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONA1.REPORTE_PERSONAS1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONA1.REPORTE_PERSONAS1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONA1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONA1TableAdapters.REPORTE_PERSONAS1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_RETENCIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_REGIMEN_RETENCIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_REGIMEN_PERCEPCIONESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_PERCEPCIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.RETENCIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.PERCEPCIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_RETENCIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_REGIMEN_RETENCIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_REGIMEN_PERCEPCIONESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_PERCEPCIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.RETENCIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.PERCEPCIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_RETENCIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_REGIMEN_RETENCIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_REGIMEN_PERCEPCIONESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.REPORTE_PERCEPCIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.RETENCIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION.PERCEPCIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCION">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCIONTableAdapters.REPORTE_RETENCIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCIONTableAdapters.REPORTE_REGIMEN_RETENCIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCIONTableAdapters.REPORTE_REGIMEN_PERCEPCIONESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_RETENCIONTableAdapters.REPORTE_PERCEPCIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_CONCILIADAS_CXCDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_SALDOS_TCXCDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_TCXC_KARDEX_ACUMULADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_TCXC_KARDEX_NO_ACUMULADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_CONCILIADAS_CXC_ACTUALIZADADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_ACTUALIZADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_CONCILIADAS_CXCRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_SALDOS_TCXCRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_TCXC_KARDEX_ACUMULADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_TCXC_KARDEX_NO_ACUMULADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_CONCILIADAS_CXC_ACTUALIZADARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_ACTUALIZADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_CONCILIADAS_CXCRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_SALDOS_TCXCRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_TCXC_KARDEX_ACUMULADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_TCXC_KARDEX_NO_ACUMULADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_CONCILIADAS_CXC_ACTUALIZADARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC.REPORTE_ACTUALIZADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXC">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXCTableAdapters.REPORTE_CONCILIADAS_CXCTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXCTableAdapters.REPORTE_SALDOS_TCXCTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXCTableAdapters.REPORTE_TCXC_KARDEX_ACUMULADOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXCTableAdapters.REPORTE_TCXC_KARDEX_NO_ACUMULADOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_CXCTableAdapters.REPORTE_CONCILIADAS_CXC_ACTUALIZADATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO_PER.REPORTE_BALANCE_PERDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO_PER.REPORTE_BALANCE_PERRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO_PER.REPORTE_BALANCE_PERRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO_PER">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO_PERTableAdapters.REPORTE_BALANCE_PERTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_DETRACCION.REPORTE_DETRACCIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_DETRACCION.REPORTE_DETRACCIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_DETRACCION.REPORTE_DETRACCIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_DETRACCION">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_DETRACCIONTableAdapters.REPORTE_DETRACCIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.REPORTE_DISTRIBUCIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.ESTADISTICA_GASTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.REPORTE_DISTRIBUCIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.ESTADISTICA_GASTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.REPORTE_DISTRIBUCIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA.ESTADISTICA_GASTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICA">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_ESTADISTICATableAdapters.REPORTE_DISTRIBUCIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXC.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXC.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXC.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXC">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CANC_CXCTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBRO.I_BANCODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBRO.I_BANCO1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBRO.I_BANCORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBRO.I_BANCO1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBRO.I_BANCORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBRO.I_BANCO1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBRO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBROTableAdapters.I_BANCOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_LIBROTableAdapters.I_BANCO1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_COMPROBACION.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_COMPROBACION.SALDODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_COMPROBACION.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_COMPROBACION.SALDORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_COMPROBACION.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_COMPROBACION.SALDORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_COMPROBACION">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MOV_CTA.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MOV_CTA.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MOV_CTA.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MOV_CTA">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_MOV_CTATableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_AUXDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_COMPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_CTA_CTEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_MASKDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_RESUMENDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_GRALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_AUXRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_COMPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_CTA_CTERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_MASKRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_RESUMENRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_GRALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_AUXRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_COMPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_CTA_CTERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_MASKRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_RESUMENRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX.REPORTE_CTA_GRALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUX">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUXTableAdapters.REPORTE_CTA_AUXTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUXTableAdapters.REPORTE_CTA_COMPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUXTableAdapters.REPORTE_CTA_CTA_CTETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUXTableAdapters.REPORTE_CTA_MASKTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUXTableAdapters.REPORTE_CTA_RESUMENTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_AUXTableAdapters.REPORTE_CTA_GRALTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV2.CONFIG_PROV2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV2.CONFIG_PROV2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV2.CONFIG_PROV2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_PROV2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXP.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXP.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXP.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXP">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXPTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_SALDOS_TOTROSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_TOTROS_KARDEX_ACUMULADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_TOTROS_KARDEX_NO_ACUMULADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_CONCILIADAS_OTROSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_SALDOS_TOTROSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_TOTROS_KARDEX_ACUMULADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_TOTROS_KARDEX_NO_ACUMULADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_CONCILIADAS_OTROSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_SALDOS_TOTROSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_TOTROS_KARDEX_ACUMULADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_TOTROS_KARDEX_NO_ACUMULADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS.REPORTE_CONCILIADAS_OTROSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROSTableAdapters.REPORTE_SALDOS_TOTROSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROSTableAdapters.REPORTE_TOTROS_KARDEX_ACUMULADOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROSTableAdapters.REPORTE_TOTROS_KARDEX_NO_ACUMULADOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_OTROSTableAdapters.REPORTE_CONCILIADAS_OTROSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCO.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCO.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCO.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCO.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCO.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCO.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCOTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_BCOTableAdapters.DataTable2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CONTABILIDAD.FacturacionNWS.FacturacionNService.#ctor">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.FacturacionNWS.FacturacionNService.EnviarGuiaCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.FacturacionNWS.FacturacionNService.EnviarRetencionCompleted">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.FacturacionNWS.FacturacionNService.EnviarGuia(System.Byte[])">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.FacturacionNWS.FacturacionNService.EnviarGuiaAsync(System.Byte[])">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.FacturacionNWS.FacturacionNService.EnviarGuiaAsync(System.Byte[],System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.FacturacionNWS.FacturacionNService.EnviarRetencion(System.Byte[])">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.FacturacionNWS.FacturacionNService.EnviarRetencionAsync(System.Byte[])">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.FacturacionNWS.FacturacionNService.EnviarRetencionAsync(System.Byte[],System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.FacturacionNWS.FacturacionNService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.FacturacionNWS.FacturacionNService">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.cdrFile">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.digestValue">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.identifier">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.outString">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.pdfFile">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.responseCode">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.sunatError">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.uuid">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.transactionResponse.xmlSigned">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.FacturacionNWS.transactionResponse">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.sunatError.message">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.sunatError.sunatErrorCode">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.FacturacionNWS.sunatError">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.FacturacionNWS.EnviarGuiaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.EnviarGuiaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.FacturacionNWS.EnviarGuiaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.FacturacionNWS.EnviarRetencionCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.FacturacionNWS.EnviarRetencionCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.FacturacionNWS.EnviarRetencionCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTA_DETALLE1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_SALDO2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTAS2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTA_DETALLE1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_SALDO2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTAS2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTA_DETALLE1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_SALDO2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON.REPORTE_CC_CTAS2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CON">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CONTableAdapters.REPORTE_CC_CTASTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CC_T_CONTableAdapters.REPORTE_CC_CTA_DETALLE1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC2.CUADRE_PCTASXC_VS_TCTASXC1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC2.CUADRE_PCTASXC_VS_TCTASXC1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC2.CUADRE_PCTASXC_VS_TCTASXC1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TC2TableAdapters.CUADRE_PCTASXC_VS_TCTASXC1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.#ctor">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarFacturaCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarNotaCreditoCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.FirmarCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarDocumentoCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarCodigoBarrasPDF417Completed">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarNotaDebitoCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarComunicacionBajaCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarResumenCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.ConsultarTicketCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarResumenDiarioCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarRetencionCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarMailCompleted">
+	<remarks/>
+</member><member name="E:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.ConsultarCDRCompleted">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarFactura(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarFacturaAsync(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarFacturaAsync(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarNotaCredito(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarNotaCreditoAsync(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarNotaCreditoAsync(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.Firmar(CONTABILIDAD.MG_WSFacturacion.FirmadoRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.FirmarAsync(CONTABILIDAD.MG_WSFacturacion.FirmadoRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.FirmarAsync(CONTABILIDAD.MG_WSFacturacion.FirmadoRequest,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarDocumento(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarDocumentoAsync(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarDocumentoAsync(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarCodigoBarrasPDF417(CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarCodigoBarrasPDF417Async(CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarCodigoBarrasPDF417Async(CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarNotaDebito(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarNotaDebitoAsync(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarNotaDebitoAsync(CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarComunicacionBaja(CONTABILIDAD.MG_WSFacturacion.ComunicacionBaja)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarComunicacionBajaAsync(CONTABILIDAD.MG_WSFacturacion.ComunicacionBaja)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarComunicacionBajaAsync(CONTABILIDAD.MG_WSFacturacion.ComunicacionBaja,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarResumen(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarResumenAsync(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarResumenAsync(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.ConsultarTicket(CONTABILIDAD.MG_WSFacturacion.ConsultaTicketRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.ConsultarTicketAsync(CONTABILIDAD.MG_WSFacturacion.ConsultaTicketRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.ConsultarTicketAsync(CONTABILIDAD.MG_WSFacturacion.ConsultaTicketRequest,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarResumenDiario(CONTABILIDAD.MG_WSFacturacion.ResumenDiarioNuevo)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarResumenDiarioAsync(CONTABILIDAD.MG_WSFacturacion.ResumenDiarioNuevo)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarResumenDiarioAsync(CONTABILIDAD.MG_WSFacturacion.ResumenDiarioNuevo,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarRetencion(CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarRetencionAsync(CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.GenerarRetencionAsync(CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarMail(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarMailAsync(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.EnviarMailAsync(CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.ConsultarCDR(CONTABILIDAD.MG_WSFacturacion.ConsultaConstanciaRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.ConsultarCDRAsync(CONTABILIDAD.MG_WSFacturacion.ConsultaConstanciaRequest)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.ConsultarCDRAsync(CONTABILIDAD.MG_WSFacturacion.ConsultaConstanciaRequest,System.Object)">
+	<remarks/>
+</member><member name="M:CONTABILIDAD.MG_WSFacturacion.FacturacionServices.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.FacturacionServices">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.IdDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.TipoDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Emisor">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Receptor">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.FechaEmision">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Moneda">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.TipoOperacion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Gravadas">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Gratuitas">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Inafectas">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Exoneradas">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.DescuentoGlobal">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Items">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.TotalVenta">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.TotalIgv">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.TotalIsc">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.TotalOtrosTributos">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.MontoEnLetras">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.PlacaVehiculo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.MontoPercepcion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.MontoDetraccion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.DatoAdicionales">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.TipoDocAnticipo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.DocAnticipo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.MonedaAnticipo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.MontoAnticipo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.DatosGuiaTransportista">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Relacionados">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.Discrepancias">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.CalculoIgv">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.CalculoIsc">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico.CalculoDetraccion">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DocumentoElectronico">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.NroDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.TipoDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.NombreLegal">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.NombreComercial">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.Ubigeo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.Direccion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.Urbanizacion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.Departamento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.Provincia">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Contribuyente.Distrito">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.Contribuyente">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoSunatBase.IdDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoSunatBase.FechaEmision">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoSunatBase.Emisor">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoSunatBase.Receptor">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoSunatBase.Moneda">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoSunatBase.Observaciones">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DocumentoSunatBase">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion.RegimenRetencion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion.TasaRetencion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion.ImporteTotalRetenido">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion.ImporteTotalPagado">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion.DocumentosRelacionados">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemRetencion.ImporteSinRetencion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemRetencion.ImporteRetenido">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemRetencion.FechaRetencion">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ItemRetencion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase.FechaEmision">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase.ImporteTotal">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase.MonedaDocumentoRelacionado">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase.NumeroPago">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase.ImporteTotalNeto">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase.FechaPago">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase.TipoCambio">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase.FechaTipoCambio">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ItemSunatBase">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoRelacionado.NroDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoRelacionado.TipoDocumento">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DocumentoRelacionado">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoResumenDetalle.Id">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoResumenDetalle.TipoDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoResumenDetalle.Serie">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DocumentoResumenDetalle">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.CorrelativoInicio">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.CorrelativoFin">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.Moneda">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.TotalVenta">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.TotalDescuentos">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.TotalIgv">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.TotalIsc">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.TotalOtrosImpuestos">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.Gravadas">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.Exoneradas">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.Inafectas">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.Exportacion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumen.Gratuitas">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GrupoResumen">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumenNuevo.IdDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumenNuevo.TipoDocumentoReceptor">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumenNuevo.NroDocumentoReceptor">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumenNuevo.CodigoEstadoItem">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumenNuevo.DocumentoRelacionado">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GrupoResumenNuevo.TipoDocumentoRelacionado">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GrupoResumenNuevo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoBaja.Correlativo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoBaja.MotivoBaja">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DocumentoBaja">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoResumen.IdDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoResumen.FechaEmision">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoResumen.FechaReferencia">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoResumen.Emisor">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DocumentoResumen">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ResumenDiarioNuevo.Resumenes">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ResumenDiarioNuevo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ComunicacionBaja.Bajas">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ComunicacionBaja">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest.RutaGuardar">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest.TextoCodigo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest.PathArchivoPdf">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest.ValorResumen">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest.IdDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest.CodigoBarrasBytes">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasRequest">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.Ruc">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.UsuarioSol">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.ClaveSol">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.IdDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.TipoDocumento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.EndPointUrl">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.EmailEmisor">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.PasswordEmisor">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.EmailCliente">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.NombreEmpresa">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.WebEmpresa">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.FechaEmision">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun.TotalDocumento">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnvioDocumentoComun">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ConsultaConstanciaRequest.Serie">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ConsultaConstanciaRequest.Numero">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ConsultaConstanciaRequest">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ConsultaTicketRequest.NroTicket">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ConsultaTicketRequest.Ruta">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ConsultaTicketRequest">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest.TramaXmlFirmado">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest.RutaXml">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest.RutaCdr">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest.RutaPdf">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest.RutaImagen">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest.Moneda">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest.Smpt">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest.PuertoSmtp">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoRequest">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.FirmadoRequest.CertificadoDigital">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.FirmadoRequest.PasswordCertificado">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.FirmadoRequest.TramaXmlSinFirma">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.FirmadoRequest.UnSoloNodoExtension">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.FirmadoRequest">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.RespuestaComun.Exito">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.RespuestaComun.MensajeError">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.RespuestaComun.Pila">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.RespuestaComun">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ResponseGenerador">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasResponse.CodigoBarrasBytes">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.CodigoBarrasResponse">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.RespuestaComunConArchivo.NombreArchivo">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.RespuestaComunConArchivo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarResumenResponse.NroTicket">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarResumenResponse">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoResponse.CodigoRespuesta">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoResponse.MensajeRespuesta">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoResponse.TramaZipCdr">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoResponse.ErrorEmail">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoResponse.ErrorArchivos">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoResponse">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.FirmadoResponse.TramaXmlFirmado">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.FirmadoResponse.ResumenFirma">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.FirmadoResponse.ValorFirma">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.FirmadoResponse">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DocumentoResponse.TramaXmlSinFirma">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DocumentoResponse">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Discrepancia.NroReferencia">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Discrepancia.Tipo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.Discrepancia.Descripcion">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.Discrepancia">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.DireccionDestino">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.DireccionOrigen">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.RucTransportista">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.TipoDocTransportista">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.NombreTransportista">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.NroLicenciaConducir">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.PlacaVehiculo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.CodigoAutorizacion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.MarcaVehiculo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.ModoTransporte">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.UnidadMedida">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatosGuia.PesoBruto">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DatosGuia">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatoAdicional.Codigo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DatoAdicional.Contenido">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DatoAdicional">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.Id">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.Cantidad">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.UnidadMedida">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.CodigoItem">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.Descripcion">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.ValorUnitario">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.PrecioVenta">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.TipoPrecio">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.TipoImpuesto">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.Impuesto">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.ImpuestoSelectivo">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.OtroImpuesto">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.Descuento">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.TotalVenta">
+	<comentarios/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento.Suma">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.DetalleDocumento">
+	<comentarios/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GenerarFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarNotaCreditoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GenerarNotaCreditoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarNotaCreditoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.FirmarCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.FirmarCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.FirmarCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarDocumentoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarCodigoBarrasPDF417CompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GenerarCodigoBarrasPDF417CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarCodigoBarrasPDF417CompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarNotaDebitoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GenerarNotaDebitoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarNotaDebitoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarComunicacionBajaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GenerarComunicacionBajaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarComunicacionBajaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarResumenCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarResumenCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarResumenCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ConsultarTicketCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ConsultarTicketCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ConsultarTicketCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarResumenDiarioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GenerarResumenDiarioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarResumenDiarioCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarRetencionCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.GenerarRetencionCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.GenerarRetencionCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarMailCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.EnviarMailCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.EnviarMailCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ConsultarCDRCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CONTABILIDAD.MG_WSFacturacion.ConsultarCDRCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.MG_WSFacturacion.ConsultarCDRCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP2.CUADRE_PCTASXP_VS_TCTASXP1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP2.CUADRE_PCTASXP_VS_TCTASXP1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP2.CUADRE_PCTASXP_VS_TCTASXP1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CUADRE_TP2TableAdapters.CUADRE_PCTASXP_VS_TCTASXP1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOS.REPORTE_CXC_PTES1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOS.REPORTE_CXP_PTES1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOS.REPORTE_CXC_PTES1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOS.REPORTE_CXP_PTES1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOS.REPORTE_CXC_PTES1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOS.REPORTE_CXP_PTES1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOSTableAdapters.REPORTE_CXC_PTES1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_VARIOSTableAdapters.REPORTE_CXP_PTES1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CAMBIO.TIPO_CAMBIODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CAMBIO.TIPO_CAMBIORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CAMBIO.TIPO_CAMBIORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CAMBIO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CAMBIOTableAdapters.TIPO_CAMBIOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:CONTABILIDAD.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:CONTABILIDAD.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member><member name="T:CONTABILIDAD.My.Resources.Resources">
+	<summary>
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="T:CONTABILIDAD.DtConceptoUnidadNegocio.dtDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DtConceptoUnidadNegocio.dtRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DtConceptoUnidadNegocio.dtRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DtConceptoUnidadNegocio">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONAS2.REPORTE_PERSONAS2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONAS2.REPORTE_PERSONAS2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONAS2.REPORTE_PERSONAS2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONAS2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_PERSONAS2TableAdapters.REPORTE_PERSONAS2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_CYB.MAESTRO_BANCOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_CYB.MAESTRO_BANCOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_CYB.MAESTRO_BANCOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_CYB">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CTA_CYBTableAdapters.MAESTRO_BANCOSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_TP.REPORTE_ANALISIS_VS_TCTASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_TP.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_TP.REPORTE_ANALISIS_VS_TCTASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_TP.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_TP.REPORTE_ANALISIS_VS_TCTASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_TP.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_TP">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_ANA_TPTableAdapters.REPORTE_ANALISIS_VS_TCTASTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CONTABILIDAD.frmEnvioRetenciones.EscribirDocumentoCSV(System.String,System.Int32)">
+	<summary>
+ Método para el envío de Retenciones Electrónicas
+ </summary>
+	<param name="ruta">Ubicación de almacenamiento de los csv generados</param>
+	<param name="fila">Fila actual, dentro del DataGridView, del registro que se está enviando</param>
+	<remarks></remarks>
+</member><member name="M:CONTABILIDAD.frmEnvioRetenciones.EnviarDocumentoSunat(CONTABILIDAD.MG_WSFacturacion.DocumentoRetencion,System.String,System.String,System.String)">
+	<summary>
+ Método para el envío de Documentos a Sunat
+ </summary>
+	<param name="documentoRetencion">Documento a enviar a Sunat</param>
+	<param name="ruta">Ubicación de almacenamiento de los xml generados</param>
+	<remarks></remarks>
+</member><member name="T:CONTABILIDAD.DT_REP_RET_ANEXO.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_RET_ANEXO.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_RET_ANEXO.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_RET_ANEXO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DTP_PTE_DOC_CXC2.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DTP_PTE_DOC_CXC2.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DTP_PTE_DOC_CXC2.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DTP_PTE_DOC_CXC2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DTP_PTE_DOC_CXC2TableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_RANGO_BCO.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_RANGO_BCO.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_RANGO_BCO.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_RANGO_BCO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_COMP_RANGO_BCOTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTO.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTO.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTO.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTO.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTO.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTO.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTOTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CTA_GASTOTableAdapters.DataTable2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIARIO_DET.REPORTE_DIARIO_DETDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIARIO_DET.REPORTE_DIARIO_DETRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIARIO_DET.REPORTE_DIARIO_DETRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIARIO_DET">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DIARIO_DETTableAdapters.REPORTE_DIARIO_DETTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DOC_CXP2.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DOC_CXP2.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DOC_CXP2.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DOC_CXP2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_DOC_CXP2TableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PDT_PROVISIONES.PDTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PDT_PROVISIONES.PDTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PDT_PROVISIONES.PDTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PDT_PROVISIONES">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_CONS.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_CONS.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_CONS.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_CONS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_CPTO_CONSTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_BANCO_IMPR.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_BANCO_IMPR.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_BANCO_IMPR.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_BANCO_IMPR">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:CONTABILIDAD.Class1.ObtenerItemPleAnterior(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="añoPle">Año de Libro Electrónico</param>
+	<param name="mesPle">Mes Libro Electrónico</param>
+	<param name="tipoPle">Tipo Libro Electrónico(Compras-Ventas-Diario-Mayor)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_PERDIDAS_GANANCIASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_EPP_UNEGOCIODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.NEGOCIODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_TRABAJADORESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_PERDIDAS_GANANCIASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_EPP_UNEGOCIORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.NEGOCIORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_TRABAJADORESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_PERDIDAS_GANANCIASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_EPP_UNEGOCIORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.NEGOCIORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia.REPORTE_TRABAJADORESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.dtEstadisticaPerdidasGanancia">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPORTE_DIARIO_CAJA_BANCO.REPORTE_DIARIO_CAJA_BANCODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPORTE_DIARIO_CAJA_BANCO.REPORTE_DIARIO_CAJA_BANCORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPORTE_DIARIO_CAJA_BANCO.REPORTE_DIARIO_CAJA_BANCORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPORTE_DIARIO_CAJA_BANCO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REPORTE_DIARIO_CAJA_BANCOTableAdapters.REPORTE_DIARIO_CAJA_BANCOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCION.REPORTE_GASTOPRODUCCIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCION.REPORTE_GASTOPRODUCCIONCCDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCION.REPORTE_GASTOPRODUCCIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCION.REPORTE_GASTOPRODUCCIONCCRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCION.REPORTE_GASTOPRODUCCIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCION.REPORTE_GASTOPRODUCCIONCCRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCION">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCIONTableAdapters.REPORTE_GASTOPRODUCCIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_GASTO_PRODUCCIONTableAdapters.REPORTE_GASTOPRODUCCIONCCTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXC.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXC.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXC.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXC">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PTE_DOC_CXCTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONSULTA_TC.TCDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONSULTA_TC.TCRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONSULTA_TC.TCRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONSULTA_TC">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_GASTO_CTA.REPORTE_GASTO_X_CTADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_GASTO_CTA.REPORTE_GASTO_X_CTARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_GASTO_CTA.REPORTE_GASTO_X_CTARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_GASTO_CTA">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_GASTO_CTATableAdapters.REPORTE_GASTO_X_CTATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO.REPORTE_BALANCEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO.REPORTE_BALANCE_ANUALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO.REPORTE_BALANCERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO.REPORTE_BALANCE_ANUALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO.REPORTE_BALANCERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO.REPORTE_BALANCE_ANUALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_REP_FORMATOTableAdapters.REPORTE_BALANCETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_HO.REPORTE_REGISTRO_HONORARIOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_HO.REPORTE_REGISTRO_HONORARIOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_HO.REPORTE_REGISTRO_HONORARIOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_HO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_CONFIG_HOTableAdapters.REPORTE_REGISTRO_HONORARIOSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PY.REPORTE_PROYECTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PY.REPORTE_PROYECTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PY.REPORTE_PROYECTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PY">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CONTABILIDAD.DT_PYTableAdapters.REPORTE_PROYECTOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+</members>
+</doc>

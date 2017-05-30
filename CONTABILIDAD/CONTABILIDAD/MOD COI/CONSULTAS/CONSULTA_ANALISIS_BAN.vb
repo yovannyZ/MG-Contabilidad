@@ -1,0 +1,451 @@
+Imports System.Data.SqlClient
+Public Class CONSULTA_ANALISIS_BAN
+    Dim OBJ As New Class1
+    Private Sub btn_consulta_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btn_consulta.Click
+        Try
+            Dim i As Integer = dgw_cuenta.CurrentRow.Index
+        Catch ex As Exception
+            MessageBox.Show("Debe elegir un registro", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Exit Sub
+        End Try
+        dgw_kardex.Rows.Clear()
+        cbo_mes.Text = OBJ.DESC_MES(MES)
+        TabControl1.SelectedTab = (TabPage2)
+        CARGAR_PENDIENTE_DEFECTO()
+        CARGAR_PENDIENTE_DEFECTO_CONCILIADO()
+        CARGAR_MAESTRO()
+        CARGAR_MOV()
+        CARGAR_CONCILIADO()
+    End Sub
+    Private Sub btn_salir_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btn_salir.Click
+        main(26) = 0
+        Close()
+    End Sub
+    Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
+        TabControl1.SelectedTab = TabPage1
+        btn_consulta.Select()
+    End Sub
+    Private Sub Button2_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button2.Click
+        TabControl1.SelectedTab = TabPage1
+        btn_consulta.Select()
+    End Sub
+    'Private Sub Button3_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button3.click
+    '    TabControl1.SelectedTab = (TabPage1)
+    '    btn_consulta.Select()
+    'End Sub
+    'Private Sub Button5_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button5.click
+    '    limpiar_kardex()
+    '    txt_cod_per0.Focus()
+    'End Sub
+    Sub CARGAR_CONCILIADO()
+        dgw_conciliado.Rows.Clear()
+        Try
+            Dim pro_02 As New SqlCommand("MOSTRAR_ANALISIS_CONCILIADO_BAN", con)
+            pro_02.CommandType = (CommandType.StoredProcedure)
+            pro_02.Parameters.Add("@FE_AÑO", SqlDbType.Char).Value = cbo_año2.Text
+            pro_02.Parameters.Add("@FE_MES", SqlDbType.Char).Value = OBJ.COD_MES(cbo_mes2.Text)
+            pro_02.Parameters.Add("@COD_CUENTA", SqlDbType.VarChar).Value = dgw_cuenta.Item(0, dgw_cuenta.CurrentRow.Index).Value.ToString
+            con.Open()
+            pro_02.ExecuteNonQuery()
+            Dim rs2 As SqlDataReader = pro_02.ExecuteReader
+            Do While rs2.Read
+                dgw_conciliado.Rows.Add(rs2.GetValue(0), rs2.GetValue(1), rs2.GetValue(2), rs2.GetValue(3), rs2.GetValue(4), rs2.GetValue(5), rs2.GetValue(6), rs2.GetValue(7), rs2.GetValue(8), rs2.GetValue(9), rs2.GetValue(10), rs2.GetValue(11), rs2.GetValue(12), rs2.GetValue(13), rs2.GetValue(14), rs2.GetValue(15), rs2.GetValue(16), rs2.GetValue(17), rs2.GetValue(18), rs2.GetValue(19), rs2.GetValue(20))
+            Loop
+            con.Close()
+        Catch ex As Exception
+            con.Close()
+            MsgBox(ex.Message)
+        End Try
+        Dim DEBES, DEBED, HABERS, HABERD As Decimal
+        Dim I As Integer = 0
+        Dim CONT As Integer = (dgw_conciliado.RowCount - 1)
+        I = 0
+        Do While (I <= CONT)
+            If (dgw_conciliado.Item(8, I).Value = "D") Then
+                If (dgw_conciliado.Item(4, I).Value = "S") Then
+                    DEBES = (Decimal.Add(DEBES, dgw_conciliado.Item(6, I).Value))
+                Else
+                    DEBED = (Decimal.Add(DEBED, dgw_conciliado.Item(7, I).Value))
+                End If
+            ElseIf (dgw_conciliado.Item(4, I).Value = "S") Then
+                HABERS = (Decimal.Add(HABERS, dgw_conciliado.Item(6, I).Value))
+            Else
+                HABERD = (Decimal.Add(HABERD, dgw_conciliado.Item(7, I).Value))
+            End If
+            I += 1
+        Loop
+        txt_debe.Text = OBJ.HACER_DECIMAL(DEBES)
+        txt_haber.Text = OBJ.HACER_DECIMAL(HABERS)
+        txt_debed.Text = OBJ.HACER_DECIMAL(DEBED)
+        txt_haberd.Text = OBJ.HACER_DECIMAL(HABERD)
+    End Sub
+    Sub CARGAR_KARDEX_CONCILIADO()
+        dgw_kardex.Rows.Clear()
+        Try
+            Dim pro_02 As New SqlCommand("MOSTRAR_ANALISIS_KARDEX_CONCILIADO_BAN", con)
+            pro_02.CommandType = (CommandType.StoredProcedure)
+            pro_02.Parameters.Add("@FE_AÑO", SqlDbType.Char).Value = cbo_año3.Text
+            pro_02.Parameters.Add("@COD_PER", SqlDbType.Char).Value = txt_cod_per0.Text
+            pro_02.Parameters.Add("@FE_MES", SqlDbType.Char).Value = OBJ.COD_MES(cbo_mes3.Text)
+            pro_02.Parameters.Add("@COD_CUENTA", SqlDbType.VarChar).Value = dgw_cuenta.Item(0, dgw_cuenta.CurrentRow.Index).Value.ToString
+            con.Open()
+            pro_02.ExecuteNonQuery()
+            Dim rs2 As SqlDataReader = pro_02.ExecuteReader
+            Do While rs2.Read
+                dgw_kardex.Rows.Add(rs2.GetValue(0), rs2.GetValue(1), rs2.GetValue(2), rs2.GetValue(3), rs2.GetValue(4), rs2.GetValue(5), rs2.GetValue(6), rs2.GetValue(7), rs2.GetValue(8), rs2.GetValue(9), rs2.GetValue(10), rs2.GetValue(11), rs2.GetValue(12), rs2.GetValue(13), rs2.GetValue(14), rs2.GetValue(15), rs2.GetValue(16), rs2.GetValue(17), rs2.GetValue(18), rs2.GetValue(19), rs2.GetValue(20))
+            Loop
+            con.Close()
+        Catch ex As Exception
+            con.Close()
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Sub CARGAR_KARDEX_NO_CONCILIADO()
+        Dim MES6 As String = (OBJ.COD_MES(cbo_mes3.Text) + 1).ToString("00")
+        Try
+            Dim pro_02 As New SqlCommand("MOSTRAR_ANALISIS_KARDEX_NO_CONCILIADO_BAN", con)
+            pro_02.CommandType = (CommandType.StoredProcedure)
+            pro_02.Parameters.Add("@FE_AÑO", SqlDbType.Char).Value = cbo_año3.Text
+            pro_02.Parameters.Add("@COD_PER", SqlDbType.Char).Value = txt_cod_per0.Text
+            pro_02.Parameters.Add("@FE_MES", SqlDbType.Char).Value = MES6
+            pro_02.Parameters.Add("@COD_CUENTA", SqlDbType.VarChar).Value = (dgw_cuenta.Item(0, dgw_cuenta.CurrentRow.Index).Value.ToString)
+            con.Open()
+            pro_02.ExecuteNonQuery()
+            Dim rs2 As SqlDataReader = pro_02.ExecuteReader
+            Do While rs2.Read
+                dgw_kardex.Rows.Add(rs2.GetValue(0), rs2.GetValue(1), rs2.GetValue(2), rs2.GetValue(3), rs2.GetValue(4), rs2.GetValue(5), rs2.GetValue(6), rs2.GetValue(7), rs2.GetValue(8), rs2.GetValue(9), rs2.GetValue(10), rs2.GetValue(11), rs2.GetValue(12), rs2.GetValue(13), rs2.GetValue(14), rs2.GetValue(15), rs2.GetValue(16), rs2.GetValue(17), rs2.GetValue(18), rs2.GetValue(19), rs2.GetValue(20))
+            Loop
+            con.Close()
+        Catch ex As Exception
+            con.Close()
+            MsgBox(ex.Message)
+        End Try
+        Dim DEBES, DEBED, HABERS, HABERD As Decimal
+        Dim I As Integer = 0
+        Dim CONT As Integer = (dgw_kardex.RowCount - 1)
+        I = 0
+        Do While (I <= CONT)
+            If dgw_kardex.Item(8, I).Value = "D" Then
+                If dgw_kardex.Item(4, I).Value = "S" Then
+                    DEBES = Decimal.Add(DEBES, dgw_kardex.Item(6, I).Value)
+                Else
+                    DEBED = Decimal.Add(DEBED, dgw_kardex.Item(7, I).Value)
+                End If
+            ElseIf dgw_kardex.Item(4, I).Value = "S" Then
+                HABERS = Decimal.Add(HABERS, dgw_kardex.Item(6, I).Value)
+            Else
+                HABERD = Decimal.Add(HABERD, dgw_kardex.Item(7, I).Value)
+            End If
+            I += 1
+        Loop
+        txt_debe2.Text = OBJ.HACER_DECIMAL(DEBES)
+        txt_haber2.Text = OBJ.HACER_DECIMAL(HABERS)
+        txt_debed2.Text = OBJ.HACER_DECIMAL(DEBED)
+        txt_haberd2.Text = OBJ.HACER_DECIMAL(HABERD)
+    End Sub
+    Sub CARGAR_MAESTRO()
+        txt_maestro.Clear()
+        Try
+            Dim pro_02 As New SqlCommand("MOSTRAR_SALDO_MAESTRO", con)
+            pro_02.CommandType = (CommandType.StoredProcedure)
+            pro_02.Parameters.Add("@FE_AÑO", SqlDbType.Char).Value = cbo_año.Text
+            pro_02.Parameters.Add("@COD_CUENTA", SqlDbType.VarChar).Value = dgw_cuenta.Item(0, dgw_cuenta.CurrentRow.Index).Value.ToString
+            con.Open()
+            pro_02.ExecuteNonQuery()
+            Dim rs2 As SqlDataReader = pro_02.ExecuteReader
+            Do While rs2.Read
+                If OBJ.COD_MES(cbo_mes.Text) = "00" Then
+                    txt_maestro.Text = (rs2.GetValue(0))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "01" Then
+                    txt_maestro.Text = (rs2.GetValue(1))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "02" Then
+                    txt_maestro.Text = (rs2.GetValue(2))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "03" Then
+                    txt_maestro.Text = (rs2.GetValue(3))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "04" Then
+                    txt_maestro.Text = (rs2.GetValue(4))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "05" Then
+                    txt_maestro.Text = (rs2.GetValue(5))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "06" Then
+                    txt_maestro.Text = (rs2.GetValue(6))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "07" Then
+                    txt_maestro.Text = (rs2.GetValue(7))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "08" Then
+                    txt_maestro.Text = (rs2.GetValue(8))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "09" Then
+                    txt_maestro.Text = (rs2.GetValue(9))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "10" Then
+                    txt_maestro.Text = (rs2.GetValue(10))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "11" Then
+                    txt_maestro.Text = (rs2.GetValue(11))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "12" Then
+                    txt_maestro.Text = (rs2.GetValue(12))
+                ElseIf OBJ.COD_MES(cbo_mes.Text) = "13" Then
+                    txt_maestro.Text = (rs2.GetValue(13))
+                End If
+            Loop
+            con.Close()
+        Catch ex As Exception
+            con.Close()
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Sub CARGAR_AÑO()
+        cbo_año.Items.Clear()
+        cbo_año2.Items.Clear()
+        cbo_año3.Items.Clear()
+        Try
+            Dim Prog002 As New SqlCommand("Mostrar_año", con)
+            Prog002.CommandType = CommandType.StoredProcedure
+            Prog002.Parameters.Add("@COD_MODULO", SqlDbType.Char).Value = COD_MOD
+            con.Open()
+            Prog002.ExecuteNonQuery()
+            Dim Rs3 As SqlDataReader = Prog002.ExecuteReader
+            Do While Rs3.Read
+                cbo_año.Items.Add(Rs3.GetString(0))
+                cbo_año2.Items.Add(Rs3.GetString(0))
+                cbo_año3.Items.Add(Rs3.GetString(0))
+            Loop
+            con.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+    Sub CARGAR_MAESTROS_CUENTAS()
+        dgw_cuenta.Rows.Clear()
+        Try
+            Dim pro_02 As New SqlCommand("DGW_CUENTAS_STATUS_TIPO", con)
+            pro_02.CommandType = (CommandType.StoredProcedure)
+            pro_02.Parameters.Add("@AÑO", SqlDbType.Char).Value = AÑO
+            pro_02.Parameters.Add("@STATUS_ANA", SqlDbType.VarChar).Value = ("B")
+            con.Open()
+            pro_02.ExecuteNonQuery()
+            Dim rs2 As SqlDataReader = pro_02.ExecuteReader
+            Do While rs2.Read
+                dgw_cuenta.Rows.Add(rs2.GetValue(0), rs2.GetValue(1))
+            Loop
+            con.Close()
+        Catch ex As Exception
+            con.Close()
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Sub CARGAR_MOV()
+        txt_mov.Clear()
+        Try
+            Dim pro_02 As New SqlCommand("MOSTRAR_SALDO_MOV_BAN", con)
+            pro_02.CommandType = (CommandType.StoredProcedure)
+            pro_02.Parameters.Add("@FE_AÑO", SqlDbType.Char).Value = cbo_año.Text
+            pro_02.Parameters.Add("@COD_CUENTA", SqlDbType.VarChar).Value = (dgw_cuenta.Item(0, dgw_cuenta.CurrentRow.Index).Value.ToString)
+            con.Open()
+            pro_02.ExecuteNonQuery()
+            Dim rs2 As SqlDataReader = pro_02.ExecuteReader
+            Do While rs2.Read
+                txt_mov.Text = rs2.GetValue(0)
+            Loop
+            con.Close()
+        Catch ex As Exception
+            con.Close()
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Sub CARGAR_PENDIENTE_DEFECTO()
+        dgw_pendiente.Rows.Clear()
+        Dim MES0 As String = (OBJ.COD_MES(cbo_mes.Text))
+        Try
+            Dim pro_02 As New SqlCommand("MOSTRAR_ANALISIS_TBAN", con)
+            pro_02.CommandType = (CommandType.StoredProcedure)
+            pro_02.Parameters.Add("@FE_AÑO", SqlDbType.Char).Value = cbo_año.Text
+            pro_02.Parameters.Add("@FE_MES", SqlDbType.Char).Value = MES0
+            pro_02.Parameters.Add("@COD_CUENTA", SqlDbType.VarChar).Value = dgw_cuenta.Item(0, dgw_cuenta.CurrentRow.Index).Value.ToString
+            con.Open()
+            pro_02.ExecuteNonQuery()
+            Dim rs2 As SqlDataReader = pro_02.ExecuteReader
+            Do While rs2.Read
+                dgw_pendiente.Rows.Add(rs2.GetValue(0), rs2.GetValue(1), rs2.GetValue(2), rs2.GetValue(3), rs2.GetValue(4), rs2.GetValue(5), rs2.GetValue(6), rs2.GetValue(7), rs2.GetValue(8), rs2.GetValue(9), rs2.GetValue(10), rs2.GetValue(11), rs2.GetValue(12), rs2.GetValue(13), rs2.GetValue(14), rs2.GetValue(15), rs2.GetValue(16), rs2.GetValue(17), rs2.GetValue(18), rs2.GetValue(19), rs2.GetValue(20))
+            Loop
+            con.Close()
+        Catch ex As Exception
+            con.Close()
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Sub CARGAR_PENDIENTE_DEFECTO_CONCILIADO()
+        'Dim MES1 As String = (OBJ.COD_MES(cbo_mes.Text) + 1).ToString("00")
+        '----------------------
+        Dim MES0, MES1 As String
+        MES0 = OBJ.COD_MES(cbo_mes.Text)
+        MES1 = (MES0 + 1).ToString("00")
+        '----------------------
+        Try
+            Dim pro_02 As New SqlCommand("MOSTRAR_ANALISIS_TBAN2", con)
+            pro_02.CommandType = (CommandType.StoredProcedure)
+            pro_02.Parameters.Add("@FE_AÑO", SqlDbType.Char).Value = cbo_año.Text
+            pro_02.Parameters.Add("@FE_MES", SqlDbType.Char).Value = MES1
+            pro_02.Parameters.Add("@COD_CUENTA", SqlDbType.VarChar).Value = dgw_cuenta.Item(0, dgw_cuenta.CurrentRow.Index).Value.ToString
+            con.Open()
+            pro_02.ExecuteNonQuery()
+            Dim rs2 As SqlDataReader = pro_02.ExecuteReader
+            Do While rs2.Read
+                dgw_pendiente.Rows.Add(rs2.GetValue(0), rs2.GetValue(1), rs2.GetValue(2), rs2.GetValue(3), rs2.GetValue(4), rs2.GetValue(5), rs2.GetValue(6), rs2.GetValue(7), rs2.GetValue(8), rs2.GetValue(9), rs2.GetValue(10), rs2.GetValue(11), rs2.GetValue(12), rs2.GetValue(13), rs2.GetValue(14), rs2.GetValue(15), rs2.GetValue(16), rs2.GetValue(17), rs2.GetValue(18), rs2.GetValue(19), rs2.GetValue(20))
+            Loop
+            con.Close()
+        Catch ex As Exception
+            con.Close()
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Private Sub cbo_mes_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles cbo_mes.SelectedIndexChanged
+        CARGAR_PENDIENTE_DEFECTO()
+        CARGAR_PENDIENTE_DEFECTO_CONCILIADO()
+        CARGAR_MAESTRO()
+        CARGAR_MOV()
+    End Sub
+    Private Sub cbo_mes2_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles cbo_mes2.SelectedIndexChanged
+        CARGAR_CONCILIADO()
+    End Sub
+    Private Sub cbo_mes3_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles cbo_mes3.SelectedIndexChanged
+        CARGAR_KARDEX_CONCILIADO()
+        CARGAR_KARDEX_NO_CONCILIADO()
+    End Sub
+    Private Sub dgw_per_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles dgw_per.KeyDown
+        If (e.KeyData = Keys.Return) Then
+            txt_cod_per0.Text = dgw_per.Item(0, dgw_per.CurrentRow.Index).Value.ToString
+            txt_desc_per.Text = dgw_per.Item(1, dgw_per.CurrentRow.Index).Value.ToString
+            txt_doc_per.Text = dgw_per.Item(2, dgw_per.CurrentRow.Index).Value.ToString
+            Panel_per.Visible = False
+        ElseIf (e.KeyData = Keys.Escape) Then
+            Panel_per.Visible = False
+            txt_cod_per0.Focus()
+            txt_cod_per0.Clear()
+            txt_desc_per.Clear()
+            txt_doc_per.Clear()
+            txt_cod_per0.Focus()
+        End If
+    End Sub
+    Sub DGW_PERSONAS()
+        Try
+            dgw_per.DataSource = OBJ.MOSTRAR_PERSONAS_COBRAR
+            dgw_per.ColumnHeadersDefaultCellStyle.Font = (New Font("arial", 8.0!, FontStyle.Bold))
+            dgw_per.Columns(0).Width = 50
+            dgw_per.Columns(1).Width = (&HEB)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            MessageBox.Show("Ocurrió un Error", "Vuelva a Intentarlo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End Try
+    End Sub
+    Sub limpiar_kardex()
+        txt_cod_per0.Clear()
+        txt_desc_per.Clear()
+        txt_doc_per.Clear()
+        dgw_kardex.Rows.Clear()
+    End Sub
+    Sub limpiar_pendiente()
+        txt_mov.Clear()
+        txt_maestro.Clear()
+        cbo_mes.SelectedIndex = -1
+    End Sub
+    Private Sub txt_cod_per0_LostFocus(ByVal sender As Object, ByVal e As EventArgs) Handles txt_cod_per0.LostFocus
+        If (Strings.Trim(txt_cod_per0.Text) <> "") Then
+            If (dgw_per.RowCount = 0) Then
+                MessageBox.Show("No existen PERSONAS X COBRAR", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Else
+                dgw_per.Sort(dgw_per.Columns.Item(0), System.ComponentModel.ListSortDirection.Ascending)
+                'Dim VB$t_i4$L0 As Integer = (dgw_per.RowCount - 1)
+                Dim i As Integer = 0
+                Do While (i <= (dgw_per.RowCount - 1))
+                    If (txt_cod_per0.Text.ToLower = dgw_per.Item(0, i).Value.ToString.ToLower) Then
+                        txt_cod_per0.Text = dgw_per.Item(0, i).Value.ToString
+                        txt_desc_per.Text = dgw_per.Item(1, i).Value.ToString
+                        txt_doc_per.Text = dgw_per.Item(2, i).Value.ToString
+                        Exit Sub
+                    End If
+                    If (txt_cod_per0.Text.ToLower = Strings.Mid((dgw_per.Item(0, i).Value), 1, Strings.Len(txt_cod_per0.Text)).ToLower) Then
+                        dgw_per.CurrentCell = (dgw_per.Rows.Item(i).Cells.Item(0))
+                        Exit Do
+                    End If
+                    dgw_per.CurrentCell = (dgw_per.Rows.Item(0).Cells.Item(0))
+                    i += 1
+                Loop
+                Panel_per.Visible = True
+                dgw_per.Visible = True
+                dgw_per.Focus()
+            End If
+        End If
+    End Sub
+    Private Sub txt_desc_per_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles txt_desc_per.KeyDown
+        If ((e.KeyData = Keys.Return) AndAlso (Strings.Trim(txt_desc_per.Text) <> "")) Then
+            If (dgw_per.RowCount = 0) Then
+                MessageBox.Show("No existen PERSONAS X COBRAR", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Else
+                dgw_per.Sort(dgw_per.Columns.Item(1), System.ComponentModel.ListSortDirection.Ascending)
+                'Dim VB$t_i4$L0 As Integer = (dgw_per.RowCount - 1)
+                Dim i As Integer = 0
+                Do While (i <= (dgw_per.RowCount - 1))
+                    If (txt_desc_per.Text.ToLower = Strings.Mid((dgw_per.Item(1, i).Value), 1, Strings.Len(txt_desc_per.Text)).ToLower) Then
+                        dgw_per.CurrentCell = (dgw_per.Rows.Item(i).Cells.Item(0))
+                        Exit Do
+                    End If
+                    dgw_per.CurrentCell = (dgw_per.Rows.Item(0).Cells.Item(0))
+                    i += 1
+                Loop
+                Panel_per.Visible = True
+                dgw_per.Visible = True
+                dgw_per.Focus()
+            End If
+        End If
+    End Sub
+    Private Sub txt_doc_per_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles txt_doc_per.KeyDown
+        If ((e.KeyData = Keys.Return) AndAlso (Strings.Trim(txt_doc_per.Text) <> "")) Then
+            If (dgw_per.RowCount = 0) Then
+                MessageBox.Show("No existen PERSONAS X COBRAR", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Else
+                dgw_per.Sort(dgw_per.Columns.Item(2), System.ComponentModel.ListSortDirection.Ascending)
+                Dim i As Integer = 0
+                Do While (i <= (dgw_per.RowCount - 1))
+                    If (txt_doc_per.Text.ToLower = Strings.Mid((dgw_per.Item(2, i).Value), 1, Strings.Len(txt_doc_per.Text)).ToLower) Then
+                        dgw_per.CurrentCell = (dgw_per.Rows.Item(i).Cells.Item(0))
+                        Exit Do
+                    End If
+                    dgw_per.CurrentCell = (dgw_per.Rows.Item(0).Cells.Item(0))
+                    i += 1
+                Loop
+                Panel_per.Visible = True
+                dgw_per.Visible = True
+                dgw_per.Focus()
+            End If
+        End If
+    End Sub
+    Private Sub CONSULTA_ANALISIS_BAN_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        main(11) = 0
+    End Sub
+    Private Sub CONSULTA_ANALISIS_BAN_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        If (e.KeyCode = Keys.Return) Then
+            SendKeys.Send("{TAB}")
+        End If
+    End Sub
+    Private Sub CONSULTA_ANALISIS_BAN_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        KeyPreview = True
+        CARGAR_AÑO()
+        cbo_año.Text = AÑO : cbo_año2.Text = AÑO : cbo_año3.Text = AÑO
+        dgw_pendiente.ColumnHeadersDefaultCellStyle.Font = (New Font("arial", 8.0!, FontStyle.Bold))
+        dgw_kardex.ColumnHeadersDefaultCellStyle.Font = (New Font("arial", 8.0!, FontStyle.Bold))
+        dgw_conciliado.ColumnHeadersDefaultCellStyle.Font = (New Font("arial", 8.0!, FontStyle.Bold))
+        dgw_cuenta.ColumnHeadersDefaultCellStyle.Font = (New Font("arial", 8.0!, FontStyle.Bold))
+        CARGAR_MAESTROS_CUENTAS()
+        DGW_PERSONAS()
+        cbo_mes.Text = OBJ.DESC_MES(MES)
+        cbo_mes2.Text = OBJ.DESC_MES(MES)
+        cbo_mes3.Text = OBJ.DESC_MES(MES)
+    End Sub
+    Private Sub btn_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancelar.Click
+        TabControl1.SelectedTab = (TabPage1)
+        btn_consulta.Select()
+    End Sub
+    Private Sub btn_nuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_nuevo.Click
+        limpiar_kardex()
+        txt_cod_per0.Focus()
+    End Sub
+End Class

@@ -1,0 +1,23 @@
+Estructura del archivo excel del comprobante contable
+-----------------------------------------------------
+
+CUENTA CONTABLE              8   C  
+GLOSA                       60   C
+CODIGO DOCUMENTO             2   C
+NRO.DOCUMENTO               20   C
+FECHA DOCUMENTO             10   D    DD-MM-AAAA
+NRO. DE DIAS VENC.           3   N
+COD.CTA.CTE.PERSONA          5   C
+IMPORTE                     13.2 D
+CODIGO D/H                   1   C
+CODIGO MONEDA                1   C       S/D/A
+TIPO DE CAMBIO               7.4 D 
+CODIGO CENTRO COSTO          5   C
+NRO.ORDEN PRODUCCION         7   C
+CODIGO ACTIVIDAD             5   C
+CODIGO PROYECTO              5   C
+CODIGO REFERENCIA            2   C
+NRO.REFERENCIA              20   C
+STATUS REPARABLE             1   C         S   CUANDO CTA ES REPARABLE
+STATUS CONTROL               1   C         S   CUANDO SE ENVIA A CONTROL CTA.CTE.
+    
